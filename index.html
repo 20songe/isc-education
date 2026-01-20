@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>InterSystems Training Hub</title>
+  <link rel="icon" href="assets/logo.svg" />
+  <link rel="stylesheet" href="css/styles.css" />
+  <meta name="description" content="A static hub of learning paths and curated training materials for InterSystems technologies." />
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="index.html" aria-label="Go to home">
+      <img src="assets/logo.svg" alt="" class="brand-logo" />
+      <div class="brand-text">
+        <div class="brand-title">InterSystems Training Hub</div>
+        <div class="brand-subtitle">Curated learning paths & reference materials</div>
+      </div>
+    </a>
+
+    <nav class="top-nav" aria-label="Primary">
+      <a href="paths/iris-interoperability.html">IRIS Interoperability</a>
+      <a href="paths/healthshare.html">HealthShare</a>
+      <a href="paths/payer-services.html">Payer Services</a>
+    </nav>
+  </header>
+
+  <main class="container">
+    <section class="hero">
+      <h1>Choose a learning path</h1>
+      <p class="muted">
+        Each path has a structured set of resources. Use the in-page search on a path to quickly find what you need.
+      </p>
+    </section>
+
+    <section class="grid">
+      <a class="card" href="paths/iris-interoperability.html">
+        <h2>InterSystems IRIS Interoperability</h2>
+        <p>Integration foundations, HL7/FHIR pipelines, transformations, and SQL analysis.</p>
+        <span class="pill">Best for integration developers</span>
+      </a>
+
+      <a class="card" href="paths/healthshare.html">
+        <h2>HealthShare</h2>
+        <p>Healthcare solutions learning path: UCR, Patient Index, and Health Insight.</p>
+        <span class="pill">Best for solution implementers</span>
+      </a>
+
+      <a class="card" href="paths/payer-services.html">
+        <h2>Payer Services</h2>
+        <p>Payer-focused workflows, connectivity, analytics, and operational enablement.</p>
+        <span class="pill">Best for payer programs</span>
+      </a>
+    </section>
+
+    <section class="note">
+      <h3>How to add resources</h3>
+      <p class="muted">
+        Edit <code>data/resources.json</code>. Links render automatically on each path page.
+      </p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="muted">Static site • No build step • Easy to host on GitHub Pages, S3, IIS, Apache, or Nginx</div>
+  </footer>
+
+  <script src="js/app.js" defer></script>
+</body>
+</html>

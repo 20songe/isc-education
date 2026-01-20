@@ -1,0 +1,316 @@
+{
+    "paths": {
+      "iris-interoperability": {
+        "title": "InterSystems IRIS Interoperability",
+        "sections": [
+          {
+            "title": "Important resources",
+            "description": "Start here for official docs and learning services.",
+            "items": [
+              {
+                "title": "InterSystems Documentation — IRIS for Health documentation",
+                "description": "Official product documentation and reference materials.",
+                "tags": ["Docs", "Reference"],
+                "links": [
+                  { "label": "Open (add URL)", "url": "" }
+                ]
+              },
+              {
+                "title": "InterSystems Learning Services",
+                "description": "Register for access to videos, tutorials, learning paths, and more.",
+                "tags": ["Training", "Videos"],
+                "links": [
+                  { "label": "Open (add URL)", "url": "" }
+                ]
+              }
+            ]
+          },
+          {
+            "title": "IRIS installation",
+            "description": "Pre-reqs and Linux installation guidance.",
+            "items": [
+              {
+                "title": "Installation pre-requisites documentation",
+                "description": "Covers web server install, owners/groups, uncompressing kit, and dependencies.",
+                "tags": ["Install", "Linux"],
+                "links": [
+                  { "label": "Open (add URL)", "url": "" }
+                ]
+              },
+              {
+                "title": "Attended Linux installation documentation",
+                "description": "Installation walkthrough (select Development installation).",
+                "tags": ["Install", "Linux"],
+                "links": [
+                  { "label": "Open (add URL)", "url": "" }
+                ]
+              },
+              {
+                "title": "Linux development installation documentation",
+                "description": "Development install notes (select normal security settings).",
+                "tags": ["Install", "Linux"],
+                "links": [
+                  { "label": "Open (add URL)", "url": "" }
+                ]
+              }
+            ]
+          },
+          {
+            "title": "IRIS basics",
+            "description": "Core platform concepts and developer setup.",
+            "items": [
+              {
+                "title": "Introduction to the Management Portal (video)",
+                "description": "Overview of the Management Portal and key areas.",
+                "tags": ["Basics", "Video"],
+                "links": [
+                  { "label": "Open (add URL)", "url": "" }
+                ]
+              },
+              {
+                "title": "Installing VS Code and configuring InterSystems Server Connections (exercise)",
+                "description": "Developer environment setup for ObjectScript and server connectivity.",
+                "tags": ["Setup", "Exercise"],
+                "links": [
+                  { "label": "Open (add URL)", "url": "" }
+                ]
+              },
+              {
+                "title": "Creating namespaces and databases (video)",
+                "description": "How to structure data and environments in IRIS.",
+                "tags": ["Basics", "Video"],
+                "links": [
+                  { "label": "Open (add URL)", "url": "" }
+                ]
+              },
+              {
+                "title": "Integration architecture (course)",
+                "description": "Foundational integration architecture concepts for IRIS.",
+                "tags": ["Integration", "Course"],
+                "links": [
+                  { "label": "Open (add URL)", "url": "" }
+                ]
+              },
+              {
+                "title": "InterSystems ObjectScript tutorial (documentation/exercise)",
+                "description": "Language fundamentals and hands-on practice.",
+                "tags": ["ObjectScript", "Exercise"],
+                "links": [
+                  { "label": "Open (add URL)", "url": "" }
+                ]
+              }
+            ]
+          },
+          {
+            "title": "Exercise 1 — HL7-to-SQL pipeline",
+            "description": "HL7 v2 ingestion, routing rules, transformations, and SQL querying.",
+            "items": [
+              {
+                "title": "Introduction to HL7 v2 integrations in IRIS for Health (video)",
+                "tags": ["HL7", "Video"],
+                "links": [{ "label": "Open (add URL)", "url": "" }]
+              },
+              {
+                "title": "Getting started with HL7 v2 routing rules (video)",
+                "tags": ["HL7", "Rules", "Video"],
+                "links": [{ "label": "Open (add URL)", "url": "" }]
+              },
+              {
+                "title": "Using the Expression Editor in business rules (video)",
+                "tags": ["Rules", "Video"],
+                "links": [{ "label": "Open (add URL)", "url": "" }]
+              },
+              {
+                "title": "Building a message router (exercise)",
+                "tags": ["HL7", "Exercise"],
+                "links": [{ "label": "Open (add URL)", "url": "" }]
+              },
+              {
+                "title": "Data transformation basics (course)",
+                "tags": ["DTL", "Course"],
+                "links": [{ "label": "Open (add URL)", "url": "" }]
+              },
+              {
+                "title": "Building a data transformation (exercise)",
+                "tags": ["DTL", "Exercise"],
+                "links": [{ "label": "Open (add URL)", "url": "" }]
+              },
+              {
+                "title": "Running fast queries with SQL in IRIS (exercise)",
+                "tags": ["SQL", "Exercise"],
+                "links": [{ "label": "Open (add URL)", "url": "" }]
+              },
+              {
+                "title": "Using InterSystems SQL (documentation)",
+                "tags": ["SQL", "Docs"],
+                "links": [{ "label": "Open (add URL)", "url": "" }]
+              }
+            ]
+          },
+          {
+            "title": "Exercise 2 — FHIR-to-SQL pipeline",
+            "description": "FHIR concepts, getting started, and repository exercises.",
+            "items": [
+              {
+                "title": "What is FHIR? (video)",
+                "tags": ["FHIR", "Video"],
+                "links": [{ "label": "Open (add URL)", "url": "" }]
+              },
+              {
+                "title": "FHIR: A healthcare data standard designed for the future (video)",
+                "tags": ["FHIR", "Video"],
+                "links": [{ "label": "Open (add URL)", "url": "" }]
+              },
+              {
+                "title": "Getting started with FHIR (course)",
+                "tags": ["FHIR", "Course"],
+                "links": [{ "label": "Open (add URL)", "url": "" }]
+              },
+              {
+                "title": "Working with the FHIR resource repository (exercise)",
+                "tags": ["FHIR", "Exercise"],
+                "links": [{ "label": "Open (add URL)", "url": "" }]
+              }
+            ]
+          },
+          {
+            "title": "Exercise 3 — Intermediate data model transformation pipeline",
+            "description": "SDA concepts and transforming healthcare data.",
+            "items": [
+              {
+                "title": "What is SDA? (video)",
+                "tags": ["SDA", "Video"],
+                "links": [{ "label": "Open (add URL)", "url": "" }]
+              },
+              {
+                "title": "Using SDA to transform healthcare data (video)",
+                "tags": ["SDA", "Video"],
+                "links": [{ "label": "Open (add URL)", "url": "" }]
+              }
+            ]
+          },
+          {
+            "title": "Exercise 4 — FHIR SQL Builder",
+            "description": "Projections, analysis, and supporting docs.",
+            "items": [
+              {
+                "title": "What is the FHIR SQL Builder (video)",
+                "tags": ["FHIR", "SQL Builder", "Video"],
+                "links": [{ "label": "Open (add URL)", "url": "" }]
+              },
+              {
+                "title": "Making a projection in the FHIR SQL Builder (video)",
+                "tags": ["FHIR", "SQL Builder", "Video"],
+                "links": [{ "label": "Open (add URL)", "url": "" }]
+              },
+              {
+                "title": "Performing an analysis in the FHIR SQL Builder (video)",
+                "tags": ["FHIR", "SQL Builder", "Video"],
+                "links": [{ "label": "Open (add URL)", "url": "" }]
+              },
+              {
+                "title": "Accessing FHIR SQL Builder (documentation)",
+                "tags": ["FHIR", "SQL Builder", "Docs"],
+                "links": [{ "label": "Open (add URL)", "url": "" }]
+              },
+              {
+                "title": "Analyze the FHIR repository for SQL Builder (documentation)",
+                "tags": ["FHIR", "SQL Builder", "Docs"],
+                "links": [{ "label": "Open (add URL)", "url": "" }]
+              },
+              {
+                "title": "Creating a new transformation specification for FHIR SQL Builder (documentation)",
+                "tags": ["FHIR", "SQL Builder", "Docs"],
+                "links": [{ "label": "Open (add URL)", "url": "" }]
+              },
+              {
+                "title": "Create the projection for FHIR SQL Builder (documentation)",
+                "tags": ["FHIR", "SQL Builder", "Docs"],
+                "links": [{ "label": "Open (add URL)", "url": "" }]
+              }
+            ]
+          }
+        ]
+      },
+  
+      "healthshare": {
+        "title": "HealthShare",
+        "sections": [
+          {
+            "title": "Unified Care Record (UCR)",
+            "description": "Add your UCR enablement materials here.",
+            "items": [
+              {
+                "title": "UCR overview",
+                "description": "Concepts, architecture, and implementation guides.",
+                "tags": ["UCR"],
+                "links": [{ "label": "Add URL", "url": "" }]
+              }
+            ]
+          },
+          {
+            "title": "Patient Index",
+            "description": "Identity resolution, patient matching, and operations.",
+            "items": [
+              {
+                "title": "Patient Index fundamentals",
+                "tags": ["Patient Index"],
+                "links": [{ "label": "Add URL", "url": "" }]
+              }
+            ]
+          },
+          {
+            "title": "Health Insight",
+            "description": "Analytics and insights materials.",
+            "items": [
+              {
+                "title": "Health Insight fundamentals",
+                "tags": ["Health Insight"],
+                "links": [{ "label": "Add URL", "url": "" }]
+              }
+            ]
+          }
+        ]
+      },
+  
+      "payer-services": {
+        "title": "Payer Services",
+        "sections": [
+          {
+            "title": "Getting started",
+            "description": "Orientation, platform concepts, and onboarding.",
+            "items": [
+              {
+                "title": "Payer Services overview",
+                "tags": ["Overview"],
+                "links": [{ "label": "Add URL", "url": "" }]
+              }
+            ]
+          },
+          {
+            "title": "Integrations",
+            "description": "Connectivity patterns, APIs, and messaging.",
+            "items": [
+              {
+                "title": "Integration patterns",
+                "tags": ["Integration"],
+                "links": [{ "label": "Add URL", "url": "" }]
+              }
+            ]
+          },
+          {
+            "title": "Analytics & operations",
+            "description": "Reporting, monitoring, and operational readiness.",
+            "items": [
+              {
+                "title": "Operational dashboards",
+                "tags": ["Analytics"],
+                "links": [{ "label": "Add URL", "url": "" }]
+              }
+            ]
+          }
+        ]
+      }
+    }
+  }
+  
