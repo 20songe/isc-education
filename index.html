@@ -25,45 +25,62 @@
     </nav>
   </header>
 
-  <main class="container">
-    <section class="hero">
-      <h1>Choose a learning path</h1>
-      <p class="muted">
-        Each path has a structured set of resources. Use the in-page search on a path to quickly find what you need.
-      </p>
-    </section>
+  <main>
+    <!-- Full-width: Quick Links + Learning Paths -->
+    <div class="full-width">
+      <section class="quicklinks">
+        <h1>General Quick Links</h1>
+        <p class="muted">
+          Official InterSystems resources for learning, documentation, and community support.
+        </p>
 
-    <section class="grid">
-      <a class="card" href="paths/iris-interoperability.html">
-        <h2>InterSystems IRIS Interoperability</h2>
-        <p>Integration foundations, HL7/FHIR pipelines, transformations, and SQL analysis.</p>
-        <span class="pill">Best for integration developers</span>
-      </a>
+        <div class="grid">
+          <a class="card" href="https://learning.intersystems.com" target="_blank" rel="noopener">
+            <h3>InterSystems Learning Services</h3>
+            <p>Official courses, videos, tutorials, and structured learning paths.</p>
+          </a>
 
-      <a class="card" href="paths/healthshare.html">
-        <h2>HealthShare</h2>
-        <p>Healthcare solutions learning path: UCR, Patient Index, and Health Insight.</p>
-        <span class="pill">Best for solution implementers</span>
-      </a>
+          <a class="card" href="https://community.intersystems.com" target="_blank" rel="noopener">
+            <h3>Developer Community</h3>
+            <p>Articles, Q&amp;A, code examples, and discussions with InterSystems engineers. Sign up for access to Developer Community AI for easy searching.</p>
+          </a>
 
-      <a class="card" href="paths/payer-services.html">
-        <h2>Payer Services</h2>
-        <p>Payer-focused workflows, connectivity, analytics, and operational enablement.</p>
-        <span class="pill">Best for payer programs</span>
-      </a>
-    </section>
+          <a class="card" href="https://docs.intersystems.com" target="_blank" rel="noopener">
+            <h3>InterSystems Documentation</h3>
+            <p>Product documentation for IRIS, IRIS for Health, HealthShare, and related tools. Includes AskMe AI for searching across documentation.</p>
+          </a>
+        </div>
+      </section>
+      </div>
 
-    <section class="note">
-      <h3>How to add resources</h3>
-      <p class="muted">
-        Edit <code>data/resources.json</code>. Links render automatically on each path page.
-      </p>
-    </section>
+      
+      <div class="full-width">
+
+      <section class="quicklinks">
+        <h1>Choose a learning path</h1>
+        <p class="muted">
+          Each path has a structured set of resources. Use the in-page search on a path to quickly find what you need.
+        </p>
+      
+      <section class="grid" aria-label="Learning paths">
+        <a class="card" href="paths/iris-interoperability.html">
+          <h2>InterSystems IRIS Interoperability</h2>
+          <p>Integration foundations, HL7/FHIR pipelines, transformations, and SQL analysis.</p>
+        </a>
+
+        <a class="card" href="paths/healthshare.html">
+          <h2>HealthShare</h2>
+          <p>Healthcare solutions learning path: UCR, Patient Index, and Health Insight.</p>
+        </a>
+
+        <a class="card" href="paths/payer-services.html">
+          <h2>Payer Services</h2>
+          <p>Payer-focused workflows, connectivity, analytics, and operational enablement.</p>
+        </a>
+      </section>
+      </section>
+    </div>
   </main>
-
-  <footer class="site-footer">
-    <div class="muted">Static site • No build step • Easy to host on GitHub Pages, S3, IIS, Apache, or Nginx</div>
-  </footer>
 
   <script src="js/app.js" defer></script>
 </body>

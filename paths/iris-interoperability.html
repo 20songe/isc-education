@@ -25,25 +25,33 @@
 
     <!-- <button id="sideNavToggle" class="side-nav-toggle" aria-controls="sideNav" aria-expanded="false" aria-label="Toggle section navigation">
       ☰ Sections
-    </button> Add inside <header class="site-header">-->
+    </button> -->
   </header>
 
   <main class="container">
-    <section class="path-header">
+    <section class="path-header page-header">
       <h1>InterSystems IRIS Interoperability</h1>
       <p class="muted">
         A curated sequence covering installation, platform basics, and integration exercises (HL7/FHIR/SDA/SQL Builder).
       </p>
-
-      <div class="toolbar">
+    
+      <!-- SEARCH BAR ALWAYS LIVES HERE -->
+      <div class="toolbar toolbar--full">
         <label class="search">
           <span class="sr-only">Search resources</span>
-          <input id="searchInput" type="search" placeholder="Search (e.g., HL7, FHIR, SQL Builder, install)..." autocomplete="off" />
+          <input
+            id="searchInput"
+            type="search"
+            placeholder="Search (e.g., HL7, FHIR, SQL Builder, install)..."
+            autocomplete="off"
+          />
         </label>
+    
         <button id="expandAllBtn" class="btn" type="button">Expand all</button>
         <button id="collapseAllBtn" class="btn" type="button">Collapse all</button>
       </div>
     </section>
+    
 
     <!-- add this inside <main class="container">, put it before the resourceRoot section -->
     <!-- <aside id="sideNav" class="side-nav" aria-label="Section navigation">

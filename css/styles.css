@@ -1,639 +1,455 @@
 :root{
-    --bg: #0b1020;
-    --panel: #111836;
-    --panel2: #0f1530;
-    --text: #eef2ff;
-    --muted: #b7c0e2;
-    --border: rgba(255,255,255,.10);
-    --border2: rgba(255,255,255,.16);
-    --link: #bcd3ff;
-    --shadow: 0 12px 28px rgba(0,0,0,.35);
-  }
-  
-  *{ box-sizing: border-box; }
-  html,body{ height: 100%; }
-  body{
-    margin: 0;
-    font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Apple Color Emoji","Segoe UI Emoji";
-    background: radial-gradient(900px 500px at 18% 8%, rgba(130,170,255,.22), transparent 60%),
-                radial-gradient(900px 500px at 82% 18%, rgba(120,255,220,.10), transparent 55%),
-                var(--bg);
-    background-attachment: fixed;
-    background-repeat: no-repeat; /* Prevents the gradient from repeating */
-    background-size: cover; /* Ensures the gradient covers the entire area */
-    color: var(--text);
-  }
-  
-  a{ color: var(--link); text-decoration: none; }
-  a:hover{ text-decoration: underline; }
-  
-  .container{
-    max-width: 1100px;
-    margin: 0 auto;
-    padding: 24px 16px 48px;
-  }
-  
-  .site-header{
-    position: sticky;
-    top: 0;
-    z-index: 10;
-    backdrop-filter: blur(10px);
-    background: rgba(10, 15, 35, .66);
-    border-bottom: 1px solid var(--border);
-    display: flex;
-    gap: 16px;
-    align-items: center;
-    justify-content: space-between;
-    padding: 14px 16px;
-  }
-  
-  .brand{
-    display: flex;
-    gap: 12px;
-    align-items: center;
-    min-width: 220px;
-  }
-  .brand-logo{ width: 36px; height: 36px; }
-  .brand-title{ font-weight: 700; letter-spacing: .2px; }
-  .brand-subtitle{ font-size: 12px; color: var(--muted); margin-top: 2px; }
-  
-  .top-nav{
-    display: flex;
-    gap: 10px;
-    flex-wrap: wrap;
-    justify-content: flex-end;
-  }
-  .top-nav a{
-    padding: 8px 10px;
-    border: 1px solid transparent;
-    border-radius: 999px;
-    color: var(--text);
-    background: transparent;
-  }
-  .top-nav a:hover{
-    border-color: var(--border2);
-    text-decoration: none;
-  }
-  .top-nav a.active{
-    background: rgba(255,255,255,.08);
-    border-color: var(--border2);
-  }
-  
-  .hero{
-    padding: 18px 0 8px;
-  }
-  .hero h1{
-    font-size: clamp(26px, 3vw, 36px);
-    margin: 0 0 8px;
-  }
-  .muted{ color: var(--muted); }
-  
-  .grid{
-    display: grid;
-    grid-template-columns: repeat(12, 1fr);
-    gap: 14px;
-    margin-top: 18px;
-  }
-  .card{
-    grid-column: span 12;
-    background: linear-gradient(180deg, rgba(255,255,255,.08), rgba(255,255,255,.03));
-    border: 1px solid var(--border);
-    border-radius: 18px;
-    padding: 16px;
-    box-shadow: var(--shadow);
-    transition: transform .12s ease, border-color .12s ease;
-  }
-  .card:hover{
-    transform: translateY(-2px);
-    border-color: var(--border2);
-    text-decoration: none;
-  }
-  .card h2{ margin: 0 0 8px; font-size: 18px; color: var(--text); }
-  .card p{ margin: 0 0 12px; color: var(--muted); line-height: 1.4; }
-  .pill{
-    display: inline-block;
-    padding: 6px 10px;
-    border-radius: 999px;
-    border: 1px solid var(--border2);
-    background: rgba(0,0,0,.16);
-    color: var(--text);
-    font-size: 12px;
-  }
-  
-  .note{
-    margin-top: 18px;
-    background: rgba(255,255,255,.05);
-    border: 1px solid var(--border);
-    border-radius: 16px;
-    padding: 14px 16px;
-  }
-  
-  .path-header h1{
-    margin: 8px 0 6px;
-    font-size: clamp(24px, 3vw, 34px);
-  }
-  .toolbar{
-    display: flex;
-    gap: 10px;
-    flex-wrap: wrap;
-    align-items: center;
-    margin-top: 14px;
-  }
-  .search{
-    flex: 1 1 320px;
-  }
-  .search input{
-    width: 100%;
-    padding: 11px 12px;
-    border-radius: 12px;
-    border: 1px solid var(--border2);
-    background: rgba(0,0,0,.22);
-    color: var(--text);
-    outline: none;
-  }
-  .search input::placeholder{ color: rgba(238,242,255,.65); }
-  
-  .btn{
-    padding: 10px 12px;
-    border-radius: 12px;
-    border: 1px solid var(--border2);
-    background: rgba(255,255,255,.06);
-    color: var(--text);
-    cursor: pointer;
-  }
-  .btn:hover{ background: rgba(255,255,255,.10); }
-  
-  .resource-root{
-    margin-top: 16px;
-    display: grid;
-    gap: 12px;
-  }
-  
-  .section{
-    background: rgba(255,255,255,.05);
-    border: 1px solid var(--border);
-    border-radius: 16px;
-    overflow: clip;
-  }
-  .section summary{
-    list-style: none;
-    cursor: pointer;
-    padding: 14px 16px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 12px;
-  }
-  .section summary::-webkit-details-marker{ display:none; }
-  .section-title{
-    font-weight: 700;
-  }
-  .section-meta{
-    font-size: 12px;
-    color: var(--muted);
-    white-space: nowrap;
-  }
-  .section-body{
-    border-top: 1px solid var(--border);
-    padding: 10px 16px 14px;
-  }
-  
-  .items{
-    display: grid;
-    gap: 10px;
-    margin-top: 8px;
-  }
-  .item{
-    border: 1px solid var(--border);
-    border-radius: 14px;
-    padding: 12px 12px;
-    background: rgba(0,0,0,.14);
-  }
-  .item-top{
-    display: flex;
-    align-items: flex-start;
-    justify-content: space-between;
-    gap: 10px;
-  }
-  .item-title{
-    font-weight: 650;
-    margin: 0;
-  }
-  .item-tags{
-    display: flex;
-    gap: 6px;
-    flex-wrap: wrap;
-    justify-content: flex-end;
-  }
-  .tag{
-    font-size: 11px;
-    padding: 4px 8px;
-    border-radius: 999px;
-    border: 1px solid var(--border2);
-    background: rgba(255,255,255,.04);
-    color: var(--text);
-  }
-  .item-desc{
-    margin: 8px 0 0;
-    color: var(--muted);
-    line-height: 1.45;
-  }
-  
-  .item-links{
-    margin-top: 10px;
-    display: flex;
-    flex-wrap: wrap;
-    gap: 8px;
-  }
-  /* .linkbtn{
-    display: inline-flex;
-    align-items: center;
-    gap: 8px;
-    padding: 8px 10px;
-    border-radius: 12px;
-    border: 1px solid var(--border2);
-    background: rgba(255,255,255,.06);
-    color: var(--text);
-  }
-  .linkbtn:hover{ text-decoration: none; background: rgba(255,255,255,.10); }
-  .linkbtn img{ width: 14px; height: 14px; opacity: .92; } */
-  
-  .site-footer{
-    padding: 18px 16px 28px;
-    border-top: 1px solid var(--border);
-    color: var(--muted);
-    text-align: center;
-  }
-  
-  .sr-only{
-    position:absolute;
-    width:1px;height:1px;
-    padding:0;margin:-1px;
-    overflow:hidden;clip:rect(0,0,0,0);
-    white-space:nowrap;border:0;
-  }
-  
-  @media (min-width: 860px){
-    .card{ grid-column: span 4; }
-  }
-  
-  /* Side navigation */
-.side-nav{
-  position: sticky;
-  top: 84px; /* sits under header */
-  width: 220px;
-  max-height: calc(100vh - 96px);
-  overflow: auto;
-  padding: 12px;
-  border-radius: 12px;
-  border: 1px solid rgba(255,255,255,.04);
-  background: linear-gradient(180deg, rgba(255,255,255,.02), rgba(0,0,0,.04));
-  margin-right: 18px;
-  box-shadow: 0 8px 20px rgba(0,0,0,.28);
-  flex: 0 0 220px;
+  --bg:#0b1020;
+  --panel:#111836;
+  --panel2:#0f1530;
+  --text:#eef2ff;
+  --muted:#b7c0e2;
+  --border:rgba(255,255,255,.10);
+  --border2:rgba(255,255,255,.16);
+  --link:#bcd3ff;
+  --shadow:0 12px 28px rgba(0,0,0,.35);
 }
 
-/* Layout: main content with sidebar */
-.container {
-  display: flex;
-  gap: 18px;
-  align-items: flex-start;
-  max-width: 1200px;
+*{ box-sizing:border-box; }
+html,body{ height:100%; }
+
+body{
+  margin:0;
+  font-family:ui-sans-serif,system-ui,-apple-system,"Segoe UI",Roboto,Helvetica,Arial,"Apple Color Emoji","Segoe UI Emoji";
+  background:
+    radial-gradient(900px 500px at 18% 8%, rgba(130,170,255,.22), transparent 60%),
+    radial-gradient(900px 500px at 82% 18%, rgba(120,255,220,.10), transparent 55%),
+    var(--bg);
+  background-attachment:fixed;
+  background-repeat:no-repeat;
+  background-size:cover;
+  color:var(--text);
 }
 
-/* Resource root takes remaining space */
-.resource-root {
-  flex: 1 1 auto;
+a{ color:var(--link); text-decoration:none; }
+a:hover{ text-decoration:underline; }
+
+.container{
+  margin:0 auto;
+  padding:24px 16px 48px;
+  width:100%;
 }
 
-/* Side nav list */
-#sideNavList{
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  display: flex;
-  flex-direction: column;
-  gap: 6px;
-}
-#sideNavList a{
-  display: block;
-  padding: 8px 10px;
-  border-radius: 10px;
-  color: var(--text);
-  text-decoration: none;
-  font-size: 14px;
-  border: 1px solid transparent;
-}
-#sideNavList a:hover{
-  background: rgba(255,255,255,.03);
-  border-color: var(--border2);
-}
-#sideNavList a.active{
-  background: rgba(188,211,255,.08);
-  color: var(--text);
-  border-color: var(--border2);
-  font-weight: 700;
+/* Header */
+.site-header{
+  position:sticky;
+  top:0;
+  z-index:10;
+  backdrop-filter:blur(10px);
+  background:rgba(10,15,35,.66);
+  border-bottom:1px solid var(--border);
+  display:flex;
+  gap:16px;
+  align-items:center;
+  justify-content:space-between;
+  padding:14px 16px;
 }
 
-/* Small screen: stack and hide side nav (user can still use in-page search) */
-@media (max-width: 920px){
-  .container{ display: block; }
-  .side-nav{ display: none; } /* hide on small screens */
-  .resource-root{ margin-top: 12px; }
+.brand{
+  display:flex;
+  gap:12px;
+  align-items:center;
+  min-width:220px;
 }
 
-/* Side nav toggle button (visible on small screens) */
-.side-nav-toggle{
-  display: none; /* shown only on small screens */
-  background: rgba(255,255,255,.04);
-  color: var(--text);
-  border: 1px solid var(--border2);
-  padding: 8px 10px;
-  border-radius: 10px;
-  cursor: pointer;
-  font-weight: 600;
-  gap: 8px;
-}
-.side-nav-toggle:focus{
-  outline: 3px solid rgba(188,211,255,.12);
-  outline-offset: 3px;
+.site-header .brand,
+.site-header .brand:hover,
+.site-header .brand:focus{
+  text-decoration:none;
 }
 
-/* Make side nav hidden by default on small screens and toggled via .open */
-@media (max-width: 920px){
-  .side-nav{ display: none; position: fixed; left: 12px; top: 82px; z-index: 1200; width: calc(100% - 24px); max-width: 360px; box-shadow: 0 18px 40px rgba(0,0,0,.5); }
-  .side-nav.open{ display: block; }
+.brand-logo{ width:36px; height:36px; }
+.brand-title{ font-weight:700; letter-spacing:.2px; }
+.brand-subtitle{ font-size:12px; color:var(--muted); margin-top:2px; }
 
-  /* show toggle button on small screens */
-  .side-nav-toggle{ display: inline-flex; align-items: center; gap: 8px; }
-
-  /* dim content behind when nav open (optional visual) */
-  body.side-nav-active::before{
-    content: "";
-    position: fixed;
-    inset: 0;
-    background: rgba(2,6,12,.45);
-    z-index: 1100;
-  }
-
-  /* ensure main container stacks */
-  .container{ display: block; }
+.top-nav{
+  display:flex;
+  gap:10px;
+  flex-wrap:wrap;
+  justify-content:flex-end;
+}
+.top-nav a{
+  padding:8px 10px;
+  border:1px solid transparent;
+  border-radius:999px;
+  color:var(--text);
+  background:transparent;
+}
+.top-nav a:hover{
+  border-color:var(--border2);
+  text-decoration:none;
+}
+.top-nav a.active{
+  background:rgba(255,255,255,.08);
+  border-color:var(--border2);
 }
 
-/* On larger screens ensure the toggle is hidden */
-@media (min-width: 921px){
-  .side-nav-toggle{ display: none; }
+/* Hero / misc */
+.hero{ padding:18px 0 8px; }
+.hero h1{
+  font-size:clamp(26px,3vw,36px);
+  margin:0 0 8px;
+}
+.muted{ color:var(--muted); }
+
+/* Card grid (homepage cards) */
+.grid{
+  display:grid;
+  grid-template-columns:repeat(12,1fr);
+  gap:14px;
+  margin-top:18px;
+}
+.card{
+  grid-column:span 12;
+  background:linear-gradient(180deg, rgba(255,255,255,.08), rgba(255,255,255,.03));
+  border:1px solid var(--border);
+  border-radius:18px;
+  padding:16px;
+  box-shadow:var(--shadow);
+  transition:transform .12s ease, border-color .12s ease;
+}
+.card:hover{
+  transform:translateY(-2px);
+  border-color:var(--border2);
+  text-decoration:none;
+}
+.card h2{ margin:0 0 8px; font-size:18px; color:var(--text); }
+.card p{ margin:0 0 12px; color:var(--muted); line-height:1.4; }
+
+.pill{
+  display:inline-block;
+  padding:6px 10px;
+  border-radius:999px;
+  border:1px solid var(--border2);
+  background:rgba(0,0,0,.16);
+  color:var(--text);
+  font-size:12px;
 }
 
-/* ============================
-   FORCE RESOURCE PAGES TO STACK
-   ============================ */
-
-/* Main resource container must always be single column */
-.resource-root {
-  display: block; /* override grid */
+.note{
+  margin-top:18px;
+  background:rgba(255,255,255,.05);
+  border:1px solid var(--border);
+  border-radius:16px;
+  padding:14px 16px;
 }
 
-/* Top-level sections (details.section) */
-.resource-root > .section {
-  width: 100%;
-  max-width: 100%;
+/* Page header + toolbar (resource pages) */
+.page-header{
+  width:100%;
+  display:block;
+  margin-bottom:16px;
 }
 
-/* Section bodies should never become multi-column */
-.section-body {
-  display: block;
+.path-header{
+  width:100%;
+  margin-bottom:12px;
+  border-bottom:1px solid var(--border);
+  padding-bottom:12px;
+}
+.path-header h1{
+  margin:8px 0 6px;
+  font-size:clamp(24px,3vw,34px);
 }
 
-/* Item lists always stack vertically */
-.items {
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
+.toolbar,
+.toolbar--full{
+  display:flex;
+  gap:10px;
+  flex-wrap:wrap;
+  align-items:center;
+  width:100%;
+  margin-top:12px;
 }
 
-/* Individual items should span full width */
-.item {
-  width: 100%;
-  max-width: 100%;
+.search{ flex:1 1 320px; }
+.search input{
+  width:100%;
+  padding:11px 12px;
+  border-radius:12px;
+  border:1px solid var(--border2);
+  background:rgba(0,0,0,.22);
+  color:var(--text);
+  outline:none;
+}
+.search input::placeholder{ color:rgba(238,242,255,.65); }
+
+.btn{
+  padding:10px 12px;
+  border-radius:12px;
+  border:1px solid var(--border2);
+  background:rgba(255,255,255,.06);
+  color:var(--text);
+  cursor:pointer;
+}
+.btn:hover{ background:rgba(255,255,255,.10); }
+
+/* Resources (single-column stacking) */
+.resource-root{
+  margin-top:16px;
+  display:block;
+  width:100%;
 }
 
-/* Nested sections (from GUTS children) also stack */
-.section .section {
-  width: 100%;
-  max-width: 100%;
+.section{
+  background:rgba(255,255,255,.05);
+  border:1px solid var(--border);
+  border-radius:16px;
+  overflow:clip;
+  width:100%;
+  max-width:100%;
+  margin-bottom:0.5em;
+}
+.section summary{
+  list-style:none;
+  cursor:pointer;
+  padding:14px 16px;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:12px;
+}
+.section summary::-webkit-details-marker{ display:none; }
+.section-title{ font-weight:700; }
+.section-meta{
+  font-size:12px;
+  color:var(--muted);
+  white-space:nowrap;
+}
+.section-body{
+  border-top:1px solid var(--border);
+  padding:10px 16px 14px;
+  display:block;
 }
 
-
-/* ================================
-   STACK SEARCH BAR ABOVE RESOURCES
-   ================================ */
-
-/* Ensure main content (excluding side nav) stacks vertically */
-.container {
-  align-items: stretch;
+/* Item list */
+.items{
+  display:flex;
+  flex-direction:column;
+  gap:0.5em;
+  margin-top:8px;
 }
 
-/* Wrap header + resources as a vertical column */
-.path-header {
-  width: 100%;
-  margin-bottom: 12px;
-  border-bottom: 1px solid var(--border);
-  padding-bottom: 12px;
+/* Single source of truth for .item */
+.item{
+  width:100%;
+  max-width:100%;
+  position:relative;
+  border:1px solid var(--border);
+  border-radius:14px;
+  padding:14px;        /* slightly roomier */
+  background:rgba(0,0,0,.14);
+  transition:background .15s ease, transform .15s ease, box-shadow .15s ease, border-color .15s ease;
+  -webkit-tap-highlight-color:transparent;
 }
 
-/* Toolbar (search + buttons) always sits above resource list */
-.path-header .toolbar {
-  display: flex;
-  flex-wrap: wrap;
-  width: 100%;
-  margin-bottom: 12px;
+/* Entire item highlights (and ONLY the item) on hover */
+.item:hover{
+  background:rgba(255,255,255,.045);
+  transform:translateY(-3px);
+  box-shadow:0 14px 36px rgba(0,0,0,.32);
+  border-color:var(--border2);
 }
 
-/* Resource root always starts on a new row below the header */
-.resource-root {
-  width: 100%;
-  margin-top: 0;
+/* If your item is an anchor, keep it looking like a card */
+.item,
+.item:hover,
+.item:visited{
+  color:inherit;
+  text-decoration:none;
 }
 
+.item-top{
+  display:flex;
+  align-items:flex-start;
+  justify-content:space-between;
+  gap:10px;
+}
+.item-title{ font-weight:650; margin:0; }
 
-/* Make whole-item anchors look like the item card and fill width */
-.item a.item-link {
-  display: block;
-  text-decoration: none;
-  color: inherit;
+.item-tags{
+  display:flex;
+  gap:6px;
+  flex-wrap:wrap;
+  justify-content:flex-end;
+}
+.tag{
+  font-size:11px;
+  padding:4px 8px;
+  border-radius:999px;
+  border:1px solid var(--border2);
+  background:rgba(255,255,255,.04);
+  color:var(--text);
+}
+.item-desc{
+  margin:8px 0 0;
+  color:var(--muted);
+  line-height:1.45;
 }
 
-/* When anchor wraps the item, ensure hover still works */
-.item a.item-link:hover { text-decoration: none; }
+.item-links{
+  margin-top:8px;
+  display:flex;
+  flex-wrap:wrap;
+  gap:8px;
+}
 
-/* Make smaller secondary link buttons sit to the right (if present) */
-.item .item-links { margin-top: 8px; display:flex; gap:8px; flex-wrap:wrap; }
+/* Remove inner hover/focus highlighting (no separate highlight inside .item) */
+.item .item-inner{
+  padding:0;                 /* no separate card-inside-card */
+  border-radius:0;
+  background:transparent;
+  box-shadow:none;
+  transform:none;
+  transition:none;
+}
 
-/* If the item is an anchor, remove inner pointer events for the link buttons so they remain clickable */
-/* .item a.item-link .linkbtn { pointer-events: auto; } */
+.item.linkable:hover .item-inner,
+.item.linkable:focus-within .item-inner,
+.item.linkable:focus-visible .item-inner{
+  background:transparent !important;
+  box-shadow:none !important;
+  transform:none !important;
+}
 
-/* Keep accessibility focus style */
-.item a.item-link:focus {
-  outline: 3px solid rgba(188,211,255,.12);
-  outline-offset: 3px;
+/* Also prevent badge from independently animating/highlighting */
+.item.linkable:hover .badge-left,
+.item.linkable:focus-within .badge-left,
+.item.linkable:focus-visible .badge-left{
+  filter:none !important;
+  transform:translateY(-50%) !important;
+}
+
+/* Keep badge positioning (static) */
+.badge-left{
+  position:absolute;
+  right:12px;
+  top:50%;
+  transform:translateY(-50%);
+  min-width:56px;
+  padding:6px 8px;
+  border-radius:10px;
+  font-size:12px;
+  font-weight:700;
+  text-align:center;
+  line-height:1;
+  border:1px solid var(--border2);
+  color:var(--text);
+  box-shadow:0 6px 18px rgba(0,0,0,.18);
+  z-index:4;
+}
+
+.badge--video{ background:linear-gradient(180deg,#94B9FF,#6FA8FF); color:#07203a; }
+.badge--course{ background:linear-gradient(180deg,#C9A3FF,#A678FF); color:#23143a; }
+.badge--docs{ background:linear-gradient(180deg,#BFEFD7,#8CE6C0); color:#052818; }
+.badge--exercise{ background:linear-gradient(180deg,#FFD6A6,#FFB46B); color:#2b1400; }
+
+/* Secondary link buttons inside item (no special hover highlight) */
+.item .linkbtn{
+  display:inline-flex;
+  align-items:center;
+  gap:8px;
+  padding:6px 8px;
+  border:none;
+  background:transparent;
+  color:var(--text);
+  font-weight:600;
+  border-radius:8px;
+  cursor:pointer;
+  text-decoration:none;
+  -webkit-tap-highlight-color:transparent;
+}
+.item .linkbtn img{ width:14px; height:14px; }
+
+/* Remove linkbtn hover highlight so only the .item changes */
+.item .linkbtn:hover{
+  background:transparent;
+  transform:none;
+}
+
+.item .linkbtn:focus{ outline:none; }
+.item .linkbtn:focus-visible{ box-shadow:none; }
+
+.item.linkable .linkbtn{ pointer-events:auto; }
+
+button::-moz-focus-inner,
+.item .linkbtn::-moz-focus-inner{
+  border:0;
+  padding:0;
+}
+
+/* Footer / helpers */
+.site-footer{
+  padding:18px 16px 28px;
+  border-top:1px solid var(--border);
+  color:var(--muted);
+  text-align:center;
+}
+
+.sr-only{
+  position:absolute;
+  width:1px;
+  height:1px;
+  padding:0;
+  margin:-1px;
+  overflow:hidden;
+  clip:rect(0,0,0,0);
+  white-space:nowrap;
+  border:0;
+}
+
+.quicklinks{ margin-top:3rem; }
+
+.full-width{
+  width:100vw;
+  margin-left:calc(50% - 50vw);
+  margin-right:calc(50% - 50vw);
+  padding:0 2rem;
 }
 
 /* ==============================
-   ENTIRE .item AS LINK + HOVER (cleaned)
-   - Entire .item becomes the link when linkable
-   - Hover/focus highlights the whole card (including badge)
-   - No persistent mouse-focus rectangle; keyboard users keep visible focus
-   - Secondary "linkbtn" rendered as borderless buttons
+   REMOVE SPACE FOR LEFT NAV
    ============================== */
 
-/* Base item and inner box */
-.item {
-  position: relative;
-  padding-left: 12px;
-  transition: transform .12s ease, background .12s ease;
-  -webkit-tap-highlight-color: transparent;
+/* Hide sidebar everywhere (so it can’t reserve space) */
+.side-nav{ display:none !important; }
+.side-nav{ margin-right:0; flex:0 0 auto; width:auto; }
+
+/* Make the main container single-column on desktop too */
+@media (min-width: 921px){
+  .container{
+    display:block;        /* was grid with 240px sidebar column */
+    max-width:1200px;     /* keep or remove if you want full-bleed */
+  }
+  .resource-root{ width:100%; }
 }
 
-/* When .item is linkable, mark it and reset decoration */
-.item.linkable {
-  display: block;
-  color: inherit;
-  text-decoration: none;
-  border: none;
+/* Responsive */
+@media (min-width: 860px){
+  .card{ grid-column:span 4; }
 }
 
-/* inner content box; reserve right space for badge */
-.item .item-inner {
-  position: relative;
-  padding: 12px 84px 12px 12px;
-  border-radius: 14px;
-  background: rgba(0,0,0,0);
-  transition: background .12s ease, transform .12s ease, box-shadow .12s ease;
-  overflow: visible;
+@media (max-width: 920px){
+  .container{ display:block; }
+  .side-nav{ display:none !important; }
+  .resource-root{ margin-top:12px; }
+
+  .side-nav.open{ display:none !important; }
+
+  body.side-nav-active::before{
+    content:"";
+    position:fixed;
+    inset:0;
+    background:rgba(2,6,12,.45);
+    z-index:1100;
+  }
 }
 
-/* Badge placed inside item-inner, right-justified */
-.badge-left {
-  position: absolute;
-  right: 12px;
-  top: 50%;
-  transform: translateY(-50%);
-  min-width: 56px;
-  padding: 6px 8px;
-  border-radius: 10px;
-  font-size: 12px;
-  font-weight: 700;
-  text-align: center;
-  line-height: 1;
-  border: 1px solid var(--border2);
-  color: var(--text);
-  box-shadow: 0 6px 18px rgba(0,0,0,.18);
-  z-index: 4;
-}
-
-/* canonical badge colors (tweak as desired) */
-.badge--video   { background: linear-gradient(180deg,#94B9FF,#6FA8FF); color: #07203a; }
-.badge--course  { background: linear-gradient(180deg,#C9A3FF,#A678FF); color: #23143a; }
-.badge--docs    { background: linear-gradient(180deg,#BFEFD7,#8CE6C0); color: #052818; }
-.badge--exercise{ background: linear-gradient(180deg,#FFD6A6,#FFB46B); color: #2b1400; }
-
-/* Hover and focus-within: apply to whole card (including badge) */
-.item.linkable:hover .item-inner,
-.item.linkable:focus-within .item-inner {
-  background: rgba(255,255,255,0.045);
-  transform: translateY(-3px);
-  box-shadow: 0 14px 36px rgba(0,0,0,.32);
-}
-
-/* Badge visual response on hover/focus-within */
-.item.linkable:hover .badge-left,
-.item.linkable:focus-within .badge-left,
-.item.linkable:focus-visible .badge-left {
-  filter: brightness(1.02);
-  transform: translateY(-50%) scale(1.02);
-}
-
-/* Keyboard focus-visible: whole-card highlight (accessible) */
-.item.linkable:focus-visible .item-inner {
-  box-shadow: 0 0 0 3px rgba(188,211,255,.12), 0 10px 30px rgba(0,0,0,.32);
-  transform: translateY(-2px);
-  background: rgba(255,255,255,0.035);
-}
-
-/* Suppress persistent rectangle for mouse-triggered focus/active states,
-   while keeping :focus-visible for keyboard users */
-.item.linkable:focus,
-.item.linkable:active,
-.item.linkable:focus:not(:focus-visible) {
-  outline: none;
-}
-.item.linkable:focus:not(:focus-visible) .item-inner,
-.item.linkable:active .item-inner {
-  box-shadow: none !important;
-  transform: none !important;
-}
-
-/* Secondary link "buttons" inside an item — borderless, button semantics */
-.item .linkbtn,
-.item.linkable .linkbtn {
-  display: inline-flex;
-  align-items: center;
-  gap: 8px;
-  padding: 6px 8px;
-  border: none;
-  background: transparent;
-  color: var(--text);
-  font-weight: 600;
-  border-radius: 8px;
-  cursor: pointer;
-  text-decoration: none;
-  -webkit-tap-highlight-color: transparent;
-}
-
-/* icon inside button */
-.item .linkbtn img { width: 14px; height: 14px; }
-
-/* subtle hover for small button (no heavy box) */
-.item .linkbtn:hover {
-  background: rgba(255,255,255,0.02);
-  transform: translateY(-1px);
-}
-
-/* Keep keyboard-visible ring for these buttons, but don't show a small box by default;
-   parent :focus-within will display the card highlight. */
-.item .linkbtn:focus { outline: none; }
-.item .linkbtn:focus-visible { box-shadow: 0 0 0 3px rgba(188,211,255,.12); }
-
-/* Make sure pointer-events are enabled for buttons inside outer anchor */
-.item.linkable .linkbtn { pointer-events: auto; }
-
-/* Remove native inner focus rectangle in Firefox */
-button::-moz-focus-inner,
-.item .linkbtn::-moz-focus-inner {
-  border: 0;
-  padding: 0;
-}
-
-/* Responsive tweak for narrow screens */
-@media (max-width: 640px) {
-  .item .item-inner { padding-right: 72px; }
-  .badge-left { right: 10px; min-width: 50px; padding: 5px 6px; }
-}
-
-/* Spacing for item-links region (secondary links) */
-.item > .item-inner + .item-links,
-.item > .item-links {
-  margin-top: 8px;
-  display: flex;
-  gap: 8px;
-  flex-wrap: wrap;
-}
-
-/* Ensure visited/active anchors do not change color or decoration */
-.item.linkable:visited,
-.item.linkable:active,
-.item.linkable:hover:visited {
-  color: inherit;
-  text-decoration: none;
+@media (max-width: 640px){
+  .badge-left{ right:10px; min-width:50px; padding:5px 6px; }
 }

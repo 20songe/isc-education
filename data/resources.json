@@ -4,37 +4,8 @@
       "title": "InterSystems IRIS Interoperability",
       "sections": [
         {
-          "title": "Development",
-          "description": "Build core developer skills first: ObjectScript, APIs, API management, and language integrations.",
-          "items": [
-            {
-              "title": "ObjectScript",
-              "children": [
-                {
-                  "title": "InterSystems ObjectScript tutorial",
-                  "links": [
-                    {
-                      "label": "Docs / Exercise",
-                      "url": "https://docs.intersystems.com/irislatest/csp/docbook/DocBook.UI.Page.cls?KEY=TOS_intro"
-                    }
-                  ]
-                },
-                {
-                  "title": "Installing VS Code and configuring InterSystems Server Connections",
-                  "links": [
-                    {
-                      "label": "Exercise",
-                      "url": "https://learning.intersystems.com/course/view.php?name=VSCodeConfiguring"
-                    }
-                  ]
-                }
-              ]
-            }
-          ]
-        },
-
-        {
           "title": "Platform",
+          "description": "Get an overview of the Intersystems IRIS platform and managing your IRIS instance.",
           "items": [
             {
               "title": "Overview",
@@ -49,7 +20,7 @@
                   ]
                 },
                 {
-                  "title": "Creating namespaces and databases",
+                  "title": "Creating Namespaces and Databases",
                   "links": [
                     {
                       "label": "Video",
@@ -61,7 +32,6 @@
             }
           ]
         },
-
         {
           "title": "Integration",
           "items": [
@@ -69,7 +39,7 @@
               "title": "HL7",
               "children": [
                 {
-                  "title": "Introduction to HL7 v2 integrations in IRIS for Healt (video)",
+                  "title": "Introduction to HL7 V2 Integrations in IRIS for Health",
                   "links": [
                     {
                       "label": "Video",
@@ -78,7 +48,7 @@
                   ]
                 },
                 {
-                  "title": "Getting started with HL7 v2 routing rules",
+                  "title": "Getting Started With HL7 V2 Routing Rules",
                   "links": [
                     {
                       "label": "Video",
@@ -87,7 +57,7 @@
                   ]
                 },
                 {
-                  "title": "Using the Expression Editor in business rules",
+                  "title": "Using the Expression Editor in Business Rules",
                   "links": [
                     {
                       "label": "Video",
@@ -96,7 +66,7 @@
                   ]
                 },
                 {
-                  "title": "Building a message router (exercise)",
+                  "title": "Building a Message Router",
                   "links": [
                     {
                       "label": "Exercise",
@@ -106,12 +76,11 @@
                 }
               ]
             },
-
             {
               "title": "FHIR",
               "children": [
                 {
-                  "title": "What is FHIR?",
+                  "title": "What Is FHIR?",
                   "links": [
                     {
                       "label": "Video",
@@ -120,7 +89,7 @@
                   ]
                 },
                 {
-                  "title": "FHIR: A healthcare data standard designed for the future",
+                  "title": "FHIR: A Healthcare Data Standard Designed for the Future",
                   "links": [
                     {
                       "label": "Video",
@@ -129,7 +98,7 @@
                   ]
                 },
                 {
-                  "title": "Getting started with FHIR",
+                  "title": "Getting Started With FHIR",
                   "links": [
                     {
                       "label": "Course",
@@ -138,7 +107,7 @@
                   ]
                 },
                 {
-                  "title": "Working with the FHIR resource repository",
+                  "title": "Working With the FHIR Resource Repository",
                   "links": [
                     {
                       "label": "Exercise",
@@ -148,12 +117,11 @@
                 }
               ]
             },
-
             {
               "title": "FHIR SQL Builder",
               "children": [
                 {
-                  "title": "What is the FHIR SQL Builder",
+                  "title": "What Is the FHIR SQL Builder",
                   "links": [
                     {
                       "label": "Video",
@@ -162,7 +130,7 @@
                   ]
                 },
                 {
-                  "title": "Making a projection in the FHIR SQL Builder",
+                  "title": "Making a Projection in the FHIR SQL Builder",
                   "links": [
                     {
                       "label": "Video",
@@ -171,7 +139,7 @@
                   ]
                 },
                 {
-                  "title": "Performing an analysis in the FHIR SQL Builder",
+                  "title": "Performing an Analysis in the FHIR SQL Builder",
                   "links": [
                     {
                       "label": "Video",
@@ -189,7 +157,7 @@
                   ]
                 },
                 {
-                  "title": "Analyze the FHIR repository for SQL Builder",
+                  "title": "Analyze the FHIR Repository for SQL Builder",
                   "links": [
                     {
                       "label": "Documentation",
@@ -198,7 +166,7 @@
                   ]
                 },
                 {
-                  "title": "Creating a new transformation specification for FHIR SQL Builder",
+                  "title": "Creating a New Transformation Specification for FHIR SQL Builder",
                   "links": [
                     {
                       "label": "Documentation",
@@ -207,11 +175,74 @@
                   ]
                 },
                 {
-                  "title": "Create the projection for FHIR SQL Builder",
+                  "title": "Create the Projection for FHIR SQL Builder",
                   "links": [
                     {
                       "label": "Documentation",
                       "url": "https://docs.intersystems.com/irisforhealthlatest/csp/docbook/DocBook.UI.Page.cls?KEY=HXFHIRFSB_create-projection"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "title": "Development",
+          "description": "Build core developer skills first: ObjectScript, APIs, API management, and language integrations.",
+          "items": [
+            {
+              "title": "ObjectScript",
+              "children": [
+                {
+                  "title": "InterSystems ObjectScript Tutorial",
+                  "links": [
+                    {
+                      "label": "Exercise",
+                      "url": "https://docs.intersystems.com/irislatest/csp/docbook/DocBook.UI.Page.cls?KEY=TOS_intro"
+                    }
+                  ]
+                },
+                {
+                  "title": "Installing VS Code and Configuring InterSystems Server Connections",
+                  "links": [
+                    {
+                      "label": "Exercise",
+                      "url": "https://learning.intersystems.com/course/view.php?name=VSCodeConfiguring"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "healthshare": {
+      "title": "InterSystems IRIS Interoperability",
+      "sections": [
+        {
+          "title": "Development",
+          "description": "Build core developer skills first: ObjectScript, APIs, API management, and language integrations.",
+          "items": [
+            {
+              "title": "ObjectScript",
+              "children": [
+                {
+                  "title": "InterSystems ObjectScript Tutorial",
+                  "links": [
+                    {
+                      "label": "Exercise",
+                      "url": "https://docs.intersystems.com/irislatest/csp/docbook/DocBook.UI.Page.cls?KEY=TOS_intro"
+                    }
+                  ]
+                },
+                {
+                  "title": "Installing VS Code and Configuring InterSystems Server Connections",
+                  "links": [
+                    {
+                      "label": "Exercise",
+                      "url": "https://learning.intersystems.com/course/view.php?name=VSCodeConfiguring"
                     }
                   ]
                 }
