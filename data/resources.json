@@ -1,256 +1,770 @@
 {
-  "paths": {
-    "iris-interoperability": {
-      "title": "InterSystems IRIS Interoperability",
-      "sections": [
-        {
-          "title": "Platform",
-          "description": "Get an overview of the Intersystems IRIS platform and managing your IRIS instance.",
-          "items": [
-            {
-              "title": "Overview",
-              "children": [
-                {
-                  "title": "Introduction to the Management Portal",
-                  "links": [
-                    {
-                      "label": "Video",
-                      "url": "https://learning.intersystems.com/course/view.php?id=1322"
-                    }
-                  ]
-                },
-                {
-                  "title": "Creating Namespaces and Databases",
-                  "links": [
-                    {
-                      "label": "Video",
-                      "url": "https://learning.intersystems.com/course/view.php?id=2124"
-                    }
-                  ]
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "title": "Integration",
-          "items": [
-            {
-              "title": "HL7",
-              "children": [
-                {
-                  "title": "Introduction to HL7 V2 Integrations in IRIS for Health",
-                  "links": [
-                    {
-                      "label": "Video",
-                      "url": "https://www.youtube.com/watch?v=4NWcLbhJ8Xo"
-                    }
-                  ]
-                },
-                {
-                  "title": "Getting Started With HL7 V2 Routing Rules",
-                  "links": [
-                    {
-                      "label": "Video",
-                      "url": "https://learning.intersystems.com/course/view.php?id=1129"
-                    }
-                  ]
-                },
-                {
-                  "title": "Using the Expression Editor in Business Rules",
-                  "links": [
-                    {
-                      "label": "Video",
-                      "url": "https://learning.intersystems.com/course/view.php?id=941"
-                    }
-                  ]
-                },
-                {
-                  "title": "Building a Message Router",
-                  "links": [
-                    {
-                      "label": "Exercise",
-                      "url": "https://learning.intersystems.com/course/view.php?id=2517"
-                    }
-                  ]
-                }
-              ]
-            },
-            {
-              "title": "FHIR",
-              "children": [
-                {
-                  "title": "What Is FHIR?",
-                  "links": [
-                    {
-                      "label": "Video",
-                      "url": "https://learning.intersystems.com/course/view.php?id=1077"
-                    }
-                  ]
-                },
-                {
-                  "title": "FHIR: A Healthcare Data Standard Designed for the Future",
-                  "links": [
-                    {
-                      "label": "Video",
-                      "url": "https://www.youtube.com/watch?v=OIt0GrCPu8k"
-                    }
-                  ]
-                },
-                {
-                  "title": "Getting Started With FHIR",
-                  "links": [
-                    {
-                      "label": "Course",
-                      "url": "https://learning.intersystems.com/course/view.php?name=GS%20with%20FHIR%20IRIS"
-                    }
-                  ]
-                },
-                {
-                  "title": "Working With the FHIR Resource Repository",
-                  "links": [
-                    {
-                      "label": "Exercise",
-                      "url": "https://learning.intersystems.com/course/view.php?id=1276"
-                    }
-                  ]
-                }
-              ]
-            },
-            {
-              "title": "FHIR SQL Builder",
-              "children": [
-                {
-                  "title": "What Is the FHIR SQL Builder",
-                  "links": [
-                    {
-                      "label": "Video",
-                      "url": "https://learning.intersystems.com/course/view.php?name=FHIRSQLBuilderOverview"
-                    }
-                  ]
-                },
-                {
-                  "title": "Making a Projection in the FHIR SQL Builder",
-                  "links": [
-                    {
-                      "label": "Video",
-                      "url": "https://learning.intersystems.com/course/view.php?id=2153"
-                    }
-                  ]
-                },
-                {
-                  "title": "Performing an Analysis in the FHIR SQL Builder",
-                  "links": [
-                    {
-                      "label": "Video",
-                      "url": "https://learning.intersystems.com/course/view.php?id=2155"
-                    }
-                  ]
-                },
-                {
-                  "title": "Accessing FHIR SQL Builder",
-                  "links": [
-                    {
-                      "label": "Documentation",
-                      "url": "https://docs.intersystems.com/irisforhealthlatest/csp/docbook/DocBook.UI.Page.cls?KEY=HXFHIRFSB_installation"
-                    }
-                  ]
-                },
-                {
-                  "title": "Analyze the FHIR Repository for SQL Builder",
-                  "links": [
-                    {
-                      "label": "Documentation",
-                      "url": "https://docs.intersystems.com/irisforhealthlatest/csp/docbook/DocBook.UI.Page.cls?KEY=HXFHIRFSB_analyze-repo"
-                    }
-                  ]
-                },
-                {
-                  "title": "Creating a New Transformation Specification for FHIR SQL Builder",
-                  "links": [
-                    {
-                      "label": "Documentation",
-                      "url": "https://docs.intersystems.com/irisforhealthlatest/csp/docbook/DocBook.UI.Page.cls?KEY=HXFHIRFSB_create-trans-spec"
-                    }
-                  ]
-                },
-                {
-                  "title": "Create the Projection for FHIR SQL Builder",
-                  "links": [
-                    {
-                      "label": "Documentation",
-                      "url": "https://docs.intersystems.com/irisforhealthlatest/csp/docbook/DocBook.UI.Page.cls?KEY=HXFHIRFSB_create-projection"
-                    }
-                  ]
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "title": "Development",
-          "description": "Build core developer skills first: ObjectScript, APIs, API management, and language integrations.",
-          "items": [
-            {
-              "title": "ObjectScript",
-              "children": [
-                {
-                  "title": "InterSystems ObjectScript Tutorial",
-                  "links": [
-                    {
-                      "label": "Exercise",
-                      "url": "https://docs.intersystems.com/irislatest/csp/docbook/DocBook.UI.Page.cls?KEY=TOS_intro"
-                    }
-                  ]
-                },
-                {
-                  "title": "Installing VS Code and Configuring InterSystems Server Connections",
-                  "links": [
-                    {
-                      "label": "Exercise",
-                      "url": "https://learning.intersystems.com/course/view.php?name=VSCodeConfiguring"
-                    }
-                  ]
-                }
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    "healthshare": {
-      "title": "InterSystems IRIS Interoperability",
-      "sections": [
-        {
-          "title": "Development",
-          "description": "Build core developer skills first: ObjectScript, APIs, API management, and language integrations.",
-          "items": [
-            {
-              "title": "ObjectScript",
-              "children": [
-                {
-                  "title": "InterSystems ObjectScript Tutorial",
-                  "links": [
-                    {
-                      "label": "Exercise",
-                      "url": "https://docs.intersystems.com/irislatest/csp/docbook/DocBook.UI.Page.cls?KEY=TOS_intro"
-                    }
-                  ]
-                },
-                {
-                  "title": "Installing VS Code and Configuring InterSystems Server Connections",
-                  "links": [
-                    {
-                      "label": "Exercise",
-                      "url": "https://learning.intersystems.com/course/view.php?name=VSCodeConfiguring"
-                    }
-                  ]
-                }
-              ]
-            }
-          ]
-        }
-      ]
-    }
-  }
+	"paths": {
+		"iris-interoperability": {
+			"title": "InterSystems IRIS Interoperability",
+			"sections": [
+				{
+					"title": "Fundamentals",
+					"description": "Get an overview of the Intersystems IRIS platform and managing your IRIS instance.",
+					"items": [
+						{
+							"title": "Overview",
+							"children": [
+								{
+									"title": "Introduction to Intersystems IRIS",
+									"links": [
+										{
+											"label": "Course",
+											"url": "https://learning.intersystems.com/mod/book/view.php?id=17686&chapterid=184"
+										}
+									]
+								},
+								{
+									"title": "Intersystems IRIS Documentation",
+									"links": [
+										{
+											"label": "Docs",
+											"url": "https://docs.intersystems.com/irisforhealthlatest/csp/docbook/DocBook.UI.Page.cls"
+										}
+									]
+								}
+							]
+						},
+						{
+							"title": "Managing IRIS",
+							"children": [
+								{
+									"title": "Introduction to the Management Portal",
+									"links": [
+										{
+											"label": "Video",
+											"url": "https://learning.intersystems.com/course/view.php?id=1322"
+										}
+									]
+								},
+								{
+									"title": "Creating Namespaces and Databases",
+									"links": [
+										{
+											"label": "Video",
+											"url": "https://learning.intersystems.com/course/view.php?id=2124"
+										}
+									]
+								},
+								{
+									"title": "Using the InterSystems Terminal",
+									"links": [
+										{
+											"label": "Video",
+											"url": "https://learning.intersystems.com/course/view.php?name=UsingTheTerminal"
+										}
+									]
+								}
+							]
+						}
+					]
+				},
+				{
+					"title": "Integration",
+					"items": [
+						{
+							"title": "HL7",
+							"children": [
+								{
+									"title": "Introduction to HL7 V2 Integrations in IRIS for Health",
+									"links": [
+										{
+											"label": "Video",
+											"url": "https://www.youtube.com/watch?v=4NWcLbhJ8Xo"
+										}
+									]
+								},
+								{
+									"title": "Data Transformation Basics",
+									"links": [
+										{
+											"label": "Course",
+											"url": "https://learning.intersystems.com/course/view.php?id=2529"
+										}
+									]
+								},
+								{
+									"title": "Building a Data Transformation",
+									"links": [
+										{
+											"label": "Exercise",
+											"url": "https://learning.intersystems.com/course/view.php?name=BuildDTL"
+										}
+									]
+								},
+								{
+									"title": "Getting Started With HL7 V2 Routing Rules",
+									"links": [
+										{
+											"label": "Video",
+											"url": "https://learning.intersystems.com/course/view.php?id=1129"
+										}
+									]
+								},
+								{
+									"title": "Using the Expression Editor in Business Rules",
+									"links": [
+										{
+											"label": "Video",
+											"url": "https://learning.intersystems.com/course/view.php?id=941"
+										}
+									]
+								},
+								{
+									"title": "Building a Message Router",
+									"links": [
+										{
+											"label": "Exercise",
+											"url": "https://learning.intersystems.com/course/view.php?id=2517"
+										}
+									]
+								},
+								{
+									"title": "Building Your First HL7 Production",
+									"links": [
+										{
+											"label": "Exercise",
+											"url": "https://learning.intersystems.com/course/view.php?id=2599"
+										}
+									]
+								}
+							]
+						},
+						{
+							"title": "FHIR",
+							"children": [
+								{
+									"title": "What Is FHIR?",
+									"links": [
+										{
+											"label": "Video",
+											"url": "https://learning.intersystems.com/course/view.php?id=1077"
+										}
+									]
+								},
+								{
+									"title": "FHIR: A Healthcare Data Standard Designed for the Future",
+									"links": [
+										{
+											"label": "Video",
+											"url": "https://www.youtube.com/watch?v=OIt0GrCPu8k"
+										}
+									]
+								},
+								{
+									"title": "Getting Started With FHIR",
+									"links": [
+										{
+											"label": "Course",
+											"url": "https://learning.intersystems.com/course/view.php?name=GS%20with%20FHIR%20IRIS"
+										}
+									]
+								},
+								{
+									"title": "Working With the FHIR Resource Repository",
+									"links": [
+										{
+											"label": "Exercise",
+											"url": "https://learning.intersystems.com/course/view.php?id=1276"
+										}
+									]
+								}
+							]
+						},
+						{
+							"title": "FHIR SQL Builder",
+							"children": [
+								{
+									"title": "What Is the FHIR SQL Builder",
+									"links": [
+										{
+											"label": "Video",
+											"url": "https://learning.intersystems.com/course/view.php?name=FHIRSQLBuilderOverview"
+										}
+									]
+								},
+								{
+									"title": "Making a Projection in the FHIR SQL Builder",
+									"links": [
+										{
+											"label": "Video",
+											"url": "https://learning.intersystems.com/course/view.php?id=2153"
+										}
+									]
+								},
+								{
+									"title": "Performing an Analysis in the FHIR SQL Builder",
+									"links": [
+										{
+											"label": "Video",
+											"url": "https://learning.intersystems.com/course/view.php?id=2155"
+										}
+									]
+								},
+								{
+									"title": "Accessing FHIR SQL Builder",
+									"links": [
+										{
+											"label": "Documentation",
+											"url": "https://docs.intersystems.com/irisforhealthlatest/csp/docbook/DocBook.UI.Page.cls?KEY=HXFHIRFSB_installation"
+										}
+									]
+								},
+								{
+									"title": "Analyze the FHIR Repository for SQL Builder",
+									"links": [
+										{
+											"label": "Documentation",
+											"url": "https://docs.intersystems.com/irisforhealthlatest/csp/docbook/DocBook.UI.Page.cls?KEY=HXFHIRFSB_analyze-repo"
+										}
+									]
+								},
+								{
+									"title": "Creating a New Transformation Specification for FHIR SQL Builder",
+									"links": [
+										{
+											"label": "Documentation",
+											"url": "https://docs.intersystems.com/irisforhealthlatest/csp/docbook/DocBook.UI.Page.cls?KEY=HXFHIRFSB_create-trans-spec"
+										}
+									]
+								},
+								{
+									"title": "Create the Projection for FHIR SQL Builder",
+									"links": [
+										{
+											"label": "Documentation",
+											"url": "https://docs.intersystems.com/irisforhealthlatest/csp/docbook/DocBook.UI.Page.cls?KEY=HXFHIRFSB_create-projection"
+										}
+									]
+								}
+							]
+						}
+					]
+				},
+				{
+					"title": "Development",
+					"description": "Build core developer skills first: ObjectScript, APIs, API management, and language integrations.",
+					"items": [
+						{
+							"title": "ObjectScript",
+							"children": [
+								{
+									"title": "InterSystems ObjectScript Tutorial",
+									"links": [
+										{
+											"label": "Exercise",
+											"url": "https://docs.intersystems.com/irislatest/csp/docbook/DocBook.UI.Page.cls?KEY=TOS_intro"
+										}
+									]
+								},
+								{
+									"title": "Installing VS Code and Configuring InterSystems Server Connections",
+									"links": [
+										{
+											"label": "Exercise",
+											"url": "https://learning.intersystems.com/course/view.php?name=VSCodeConfiguring"
+										}
+									]
+								}
+							]
+						},
+						{
+							"title": "SQL",
+							"children": [
+								{
+									"title": "Running Fast Queries with SQL in InterSystems IRIS",
+									"links": [
+										{
+											"label": "Exercise",
+											"url": "https://learning.intersystems.com/course/view.php?id=1054"
+										}
+									]
+								},
+								{
+									"title": "Using InterSystems SQL",
+									"links": [
+										{
+											"label": "Docs",
+											"url": "https://docs.intersystems.com/irislatest/csp/docbook/DocBook.UI.Page.cls?KEY=GSQL_overview"
+										}
+									]
+								}
+							]
+						}
+					]
+				}
+			]
+		},
+		"healthshare": {
+			"title": "InterSystems HealthShare",
+			"sections": [
+				{
+					"title": "Core Concepts",
+					"description": "Understand what HealthShare is, how it is structured, and how it is managed.",
+					"items": [
+						{
+							"title": "Overview",
+							"children": [
+								{
+									"title": "What is HealthShare?",
+									"links": [
+										{
+											"label": "Course",
+											"url": "https://learning.intersystems.com/mod/book/view.php?id=17687&chapterid=188"
+										}
+									]
+								}
+							]
+						},
+						{
+							"title": "Unified Care Record",
+							"children": [
+								{
+									"title": "What is HealthShare Unified Care Record (UCR)",
+									"links": [
+										{
+											"label": "Course",
+											"url": "https://learning.intersystems.com/mod/book/view.php?id=17701"
+										}
+									]
+								},
+								{
+									"title": "HealthShare Unified Care Record Basics",
+									"links": [
+										{
+											"label": "Course",
+											"url": "https://learning.intersystems.com/course/view.php?name=HSUCRBasics"
+										}
+									]
+								},
+								{
+									"title": "What is SDA?",
+									"links": [
+										{
+											"label": "Video",
+											"url": "https://learning.intersystems.com/course/view.php?name=SDAOverview"
+										}
+									]
+								},
+								{
+									"title": "HealthShare UCR Operational Data Store Overview",
+									"links": [
+										{
+											"label": "Video",
+											"url": "https://learning.intersystems.com/course/view.php?id=1474"
+										}
+									]
+								}
+							]
+						},
+						{
+							"title": "Clinical Viewer",
+							"children": [
+								{
+									"title": "Clinical Viewer Overview",
+									"links": [
+										{
+											"label": "Video",
+											"url": "https://learning.intersystems.com/course/view.php?id=1683"
+										}
+									]
+								},
+								{
+									"title": "Exploring the Clinical Viewer",
+									"links": [
+										{
+											"label": "Course",
+											"url": "https://learning.intersystems.com/course/view.php?id=2741"
+										}
+									]
+								}
+							]
+						}
+					]
+				},
+				{
+					"title": "Managing HealthShare",
+					"description": "Learn how to manage HealthShare applications",
+					"items": [
+						{
+							"title": "Managing Unified Care Record",
+							"children": [
+								{
+									"title": "Introduction to the HealthShare Management Portal",
+									"links": [
+										{
+											"label": "Video",
+											"url": "https://learning.intersystems.com/course/view.php?id=1428"
+										}
+									]
+								},
+								{
+									"title": "Configuring Federated Single Sign-On in HealthShare",
+									"links": [
+										{
+											"label": "Video",
+											"url": "https://learning.intersystems.com/course/view.php?id=2617"
+										}
+									]
+								},
+								{
+									"title": "Unified Care Record Management Basics",
+									"links": [
+										{
+											"label": "Course",
+											"url": "https://learning.intersystems.com/course/view.php?id=2403"
+										}
+									]
+								}
+							]
+						},
+						{
+							"title": "Upgrading HealthShare",
+							"children": [
+								{
+									"title": "HealthShare Upgrade Overview",
+									"links": [
+										{
+											"label": "Docs",
+											"url": "https://docs.intersystems.com/hs20252/csp/docbook/Doc.View.cls?KEY=HEUPGRADE_overview"
+										}
+									]
+								},
+								{
+									"title": "Preparing to Upgrade Clinical Viewer",
+									"links": [
+										{
+											"label": "Video",
+											"url": "https://learning.intersystems.com/course/view.php?id=1725"
+										}
+									]
+								},
+								{
+									"title": "Planning and Considerations for a Clinical Viewer Upgrade",
+									"links": [
+										{
+											"label": "Docs",
+											"url": "https://docs.intersystems.com/hs20252/csp/docbook/DocBook.UI.Page.cls?KEY=HCVUPGRADE_prep_considerations"
+										}
+									]
+								}
+							]
+						}
+					]
+				},
+				{
+					"title": "Healthcare Interoperability (Core Skills)",
+					"description": "Build the interoperability skills required for HealthShare implementations.",
+					"items": [
+						{
+							"title": "HL7",
+							"children": [
+								{
+									"title": "Introduction to HL7 V2 Integrations in IRIS for Health",
+									"links": [
+										{
+											"label": "Video",
+											"url": "https://www.youtube.com/watch?v=4NWcLbhJ8Xo"
+										}
+									]
+								},
+								{
+									"title": "Data Transformation Basics",
+									"links": [
+										{
+											"label": "Course",
+											"url": "https://learning.intersystems.com/course/view.php?id=2529"
+										}
+									]
+								},
+								{
+									"title": "Building a Data Transformation",
+									"links": [
+										{
+											"label": "Exercise",
+											"url": "https://learning.intersystems.com/course/view.php?name=BuildDTL"
+										}
+									]
+								},
+								{
+									"title": "Getting Started With HL7 V2 Routing Rules",
+									"links": [
+										{
+											"label": "Video",
+											"url": "https://learning.intersystems.com/course/view.php?id=1129"
+										}
+									]
+								},
+								{
+									"title": "Using the Expression Editor in Business Rules",
+									"links": [
+										{
+											"label": "Video",
+											"url": "https://learning.intersystems.com/course/view.php?id=941"
+										}
+									]
+								},
+								{
+									"title": "Building a Message Router",
+									"links": [
+										{
+											"label": "Exercise",
+											"url": "https://learning.intersystems.com/course/view.php?id=2517"
+										}
+									]
+								},
+								{
+									"title": "Building Your First HL7 Production",
+									"links": [
+										{
+											"label": "Exercise",
+											"url": "https://learning.intersystems.com/course/view.php?id=2599"
+										}
+									]
+								}
+							]
+						},
+						{
+							"title": "FHIR",
+							"children": [
+								{
+									"title": "What Is FHIR?",
+									"links": [
+										{
+											"label": "Video",
+											"url": "https://learning.intersystems.com/course/view.php?id=1077"
+										}
+									]
+								},
+								{
+									"title": "FHIR: A Healthcare Data Standard Designed for the Future",
+									"links": [
+										{
+											"label": "Video",
+											"url": "https://www.youtube.com/watch?v=OIt0GrCPu8k"
+										}
+									]
+								},
+								{
+									"title": "FHIR Support in HealthShare Unified Care Record",
+									"links": [
+										{
+											"label": "Video",
+											"url": "https://learning.intersystems.com/course/view.php?id=1666"
+										}
+									]
+								},
+								{
+									"title": "FHIR Support in HealthShare (2025.2)",
+									"links": [
+										{
+											"label": "Docs",
+											"url": "https://docs.intersystems.com/hs20252/csp/docbook/Doc.View.cls?KEY=PAGE_FHIR_HS"
+										}
+									]
+								},
+								{
+									"title": "The Operational Data Store Production",
+									"links": [
+										{
+											"label": "Docs",
+											"url": "https://docs.intersystems.com/hs20252/csp/docbook/Doc.View.cls?KEY=HEREF_ods"
+										}
+									]
+								},
+								{
+									"title": "Supported FHIR Interactions",
+									"links": [
+										{
+											"label": "Docs",
+											"url": "https://docs.intersystems.com/hs20252/csp/docbook/Doc.View.cls?KEY=HEREF_ods#HEREF_ods_fhir_interact"
+										}
+									]
+								}
+							]
+						}
+					]
+				},
+				{
+					"title": "HealthShare Data Model & Transformation",
+					"description": "Learn how healthcare data is normalized, stored, and transformed in HealthShare.",
+					"items": [
+						{
+							"title": "SDA (Summary Document Architecture)",
+							"children": [
+								{
+									"title": "Extending SDA",
+									"links": [
+										{
+											"label": "Learning Services",
+											"url": "https://learning.intersystems.com/course/view.php?name=ExtendingSDA"
+										}
+									]
+								},
+								{
+									"title": "Extending SDA in HealthShare Applications",
+									"links": [
+										{
+											"label": "Documentation",
+											"url": "https://docs.intersystems.com/healthsharelatest/csp/docbook/DocBook.UI.Page.cls?KEY=HSAPP_extend_sda"
+										}
+									]
+								}
+							]
+						},
+						{
+							"title": "Transformations & Routing",
+							"children": [
+								{
+									"title": "Building a Data Transformation (DTL)",
+									"links": [
+										{
+											"label": "Learning Services",
+											"url": "https://learning.intersystems.com/course/view.php?name=BuildDTL"
+										}
+									]
+								},
+								{
+									"title": "Advanced Data Transformations",
+									"links": [
+										{
+											"label": "Learning Services",
+											"url": "https://learning.intersystems.com/course/view.php?name=AdvancedDTL"
+										}
+									]
+								},
+								{
+									"title": "Building a Message Router",
+									"links": [
+										{
+											"label": "Learning Services",
+											"url": "https://learning.intersystems.com/course/view.php?name=MessageRouter"
+										}
+									]
+								}
+							]
+						}
+					]
+				},
+				{
+					"title": "Security, Operations, and Deployment",
+					"description": "Operate HealthShare safely and at scale.",
+					"items": [
+						{
+							"title": "Security & Access",
+							"children": [
+								{
+									"title": "Connecting an EMR and HealthShare with Single Sign-On",
+									"links": [
+										{
+											"label": "Learning Services",
+											"url": "https://learning.intersystems.com/course/view.php?name=HealthShareSSO"
+										}
+									]
+								},
+								{
+									"title": "Integrating OAuth 2.0 and OpenID Connect",
+									"links": [
+										{
+											"label": "Learning Services",
+											"url": "https://learning.intersystems.com/course/view.php?name=OAuthOIDC"
+										}
+									]
+								}
+							]
+						},
+						{
+							"title": "Monitoring & Reliability",
+							"children": [
+								{
+									"title": "System Alerting and Monitoring (SAM)",
+									"links": [
+										{
+											"label": "Learning Services",
+											"url": "https://learning.intersystems.com/course/view.php?name=SAMOverview"
+										}
+									]
+								},
+								{
+									"title": "High Availability and Disaster Recovery",
+									"links": [
+										{
+											"label": "Learning Services",
+											"url": "https://learning.intersystems.com/course/view.php?name=HADR"
+										}
+									]
+								}
+							]
+						}
+					]
+				}
+			]
+		},
+		"payer-services": {
+			"title": "InterSystems Payer Services",
+			"sections": [
+				{
+					"title": "Payer Services Fundamentals",
+					"description": "Understand InterSystems Payer Services, its architecture, and payer-specific use cases.",
+					"items": [
+						{
+							"title": "Core Concepts",
+							"children": [
+								{
+									"title": "APIs are the Easy Part: Maximizing Your ROI While Meeting CMS-0057-F Requirements",
+									"links": [
+										{
+											"label": "Article",
+											"url": "https://www.intersystems.com/resources/apis-are-the-easy-part-maximizing-your-roi-while-meeting-cms-0057-f-requirements/"
+										}
+									]
+								},
+								{
+									"title": "What is InterSystems Payer Services?",
+									"links": [
+										{
+											"label": "Article",
+											"url": "https://www.intersystems.com/products/healthshare/payer-services/"
+										}
+									]
+								},
+								{
+									"title": "InterSystems Payer Services Documentation",
+									"links": [
+										{
+											"label": "Documentation",
+											"url": "https://docs.intersystems.com/healthmodules/csp/docbook/DocBook.UI.Page.cls?KEY=PAGE_hsps"
+										}
+									]
+								},
+								{
+									"title": "CMS-0057 Public APIs",
+									"links": [
+										{
+											"label": "Docs",
+											"url": "https://docs.intersystems.com/payer/csp/docbook/DocBook.UI.Page.cls"
+										}
+									]
+								},
+								{
+									"title": "Payer Services Essentials for Technical Audiences",
+									"links": [
+										{
+											"label": "Course",
+											"url": "https://learning.intersystems.com/totara/program/view.php?id=178"
+										}
+									]
+								}
+							]
+						}
+					]
+				}
+			]
+		}
+	}
 }

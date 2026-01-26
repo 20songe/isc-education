@@ -15,11 +15,18 @@
 
   const LABEL_MAP = {
     "video": "Video", "videos": "Video", "youtube": "Video",
+  
     "course": "Course", "courses": "Course",
+  
     "doc": "Docs", "docs": "Docs", "documentation": "Docs",
-    "exercise": "Exercise", "lab": "Exercise", "exercise/lab": "Exercise"
+  
+    "exercise": "Exercise", "lab": "Exercise", "exercise/lab": "Exercise",
+  
+    "article": "Article", "articles": "Article", "blog": "Article", "post": "Article"
   };
-  const CANONICAL_BADGES = new Set(["Video","Course","Docs","Exercise"]);
+  
+  const CANONICAL_BADGES = new Set(["Video", "Course", "Docs", "Exercise", "Article"]);
+  
 
   function normalizeLabelRaw(s) {
     if (!s) return null;

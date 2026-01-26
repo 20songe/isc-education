@@ -348,6 +348,11 @@ a:hover{ text-decoration:underline; }
 .badge--course{ background:linear-gradient(180deg,#C9A3FF,#A678FF); color:#23143a; }
 .badge--docs{ background:linear-gradient(180deg,#BFEFD7,#8CE6C0); color:#052818; }
 .badge--exercise{ background:linear-gradient(180deg,#FFD6A6,#FFB46B); color:#2b1400; }
+.badge--article {
+  background: linear-gradient(180deg, #FFD6E7, #FF9EC5);
+  color: #3a0a1f;
+}
+
 
 /* Secondary link buttons inside item (no special hover highlight) */
 .item .linkbtn{
