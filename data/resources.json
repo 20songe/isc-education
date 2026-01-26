@@ -305,7 +305,7 @@
 			"sections": [
 				{
 					"title": "Core Concepts",
-					"description": "Understand what HealthShare is, how it is structured, and how it is managed.",
+					"description": "Understand what HealthShare is, how it is structured, and how customers leverage it.",
 					"items": [
 						{
 							"title": "Overview",
@@ -323,6 +323,7 @@
 						},
 						{
 							"title": "Unified Care Record",
+							"description": "A longitudinal record that aggregates, normalizes, and de-duplicates records across various sources using our internal data model and harmonization engine.",
 							"children": [
 								{
 									"title": "What is HealthShare Unified Care Record (UCR)",
@@ -363,7 +364,23 @@
 							]
 						},
 						{
+							"title": "EMPI",
+							"description": "An enterprise master person index, providing a single source of truth for identity management and demographics within a healthcare enterprise or community.",
+							"children": [
+								{
+									"title": "What is InterSystems EMPI?",
+									"links": [
+										{
+											"label": "Video",
+											"url": "https://learning.intersystems.com/course/view.php?id=1692"
+										}
+									]
+								}
+							]
+						},
+						{
 							"title": "Clinical Viewer",
+							"description": "A web-based viewer for examining longitudinal patient/clinical records.",
 							"children": [
 								{
 									"title": "Clinical Viewer Overview",
@@ -373,13 +390,19 @@
 											"url": "https://learning.intersystems.com/course/view.php?id=1683"
 										}
 									]
-								},
+								}
+							]
+						},
+						{
+							"title": "Health Insight",
+							"description": "An analytics module for accessing and analyzing longitudinal record data.",
+							"children": [
 								{
-									"title": "Exploring the Clinical Viewer",
+									"title": "What is HealthShare Health Insight?",
 									"links": [
 										{
-											"label": "Course",
-											"url": "https://learning.intersystems.com/course/view.php?id=2741"
+											"label": "Video",
+											"url": "https://learning.intersystems.com/course/view.php?id=1691"
 										}
 									]
 								}
@@ -388,11 +411,34 @@
 					]
 				},
 				{
-					"title": "Managing HealthShare",
-					"description": "Learn how to manage HealthShare applications",
+					"title": "HealthShare Deployment, Management, and Upgrade",
+					"description": "Learn how to deploy, manage (day-to-day), and upgrade HealthShare applications",
 					"items": [
 						{
-							"title": "Managing Unified Care Record",
+							"title": "Deploying HealthShare",
+							"children": [
+								{
+									"title": "HealthShare Deployment Documentation",
+									"links": [
+										{
+											"label": "Docs",
+											"url": "https://docs.intersystems.com/hs20252/csp/docbook/DocBook.UI.Page.cls?KEY=HSDEPLOY_intro"
+										}
+									]
+								},
+								{
+									"title": "Deploying HealthShare Solution Modules with InterSystems Package Manager",
+									"links": [
+										{
+											"label": "Video",
+											"url": "https://learning.intersystems.com/course/view.php?id=2762"
+										}
+									]
+								}
+							]
+						},
+						{
+							"title": "Day-to-Day: Unified Care Record",
 							"children": [
 								{
 									"title": "Introduction to the HealthShare Management Portal",
@@ -418,6 +464,52 @@
 										{
 											"label": "Course",
 											"url": "https://learning.intersystems.com/course/view.php?id=2403"
+										}
+									]
+								}
+							]
+						},
+						{
+							"title": "Day-to-Day: InterSystems EMPI and Provider Directory",
+							"children": [
+								{
+									"title": "InterSystems EMPI Overview",
+									"links": [
+										{
+											"label": "Course",
+											"url": "https://learning.intersystems.com/course/view.php?id=2564"
+										}
+									]
+								},
+								{
+									"title": "EMPI Installation and Customization in Standalone - Basic Configuration",
+									"links": [
+										{
+											"label": "Article",
+											"url": "https://community.intersystems.com/post/empi-installation-and-customization-standalone-basic-configuration"
+										}
+									]
+								},
+								{
+									"title": "Ensuring Data Quality for InterSystems EMPI",
+									"links": [
+										{
+											"label": "Video",
+											"url": "https://learning.intersystems.com/course/view.php?id=695"
+										}
+									]
+								}
+							]
+						},
+						{
+							"title": "Day-to-Day: Health Insight",
+							"children": [
+								{
+									"title": "Health Insight Overview",
+									"links": [
+										{
+											"label": "Course",
+											"url": "https://learning.intersystems.com/course/view.php?id=1692"
 										}
 									]
 								}
@@ -458,7 +550,7 @@
 					]
 				},
 				{
-					"title": "Healthcare Interoperability (Core Skills)",
+					"title": "Healthcare Interoperability",
 					"description": "Build the interoperability skills required for HealthShare implementations.",
 					"items": [
 						{
@@ -591,111 +683,61 @@
 					]
 				},
 				{
-					"title": "HealthShare Data Model & Transformation",
+					"title": "HealthShare Implementation and Customization",
 					"description": "Learn how healthcare data is normalized, stored, and transformed in HealthShare.",
 					"items": [
 						{
 							"title": "SDA (Summary Document Architecture)",
+							"description": "Extending HealthShare's internal data model.",
 							"children": [
 								{
-									"title": "Extending SDA",
+									"title": "Customizing the SDA",
 									"links": [
 										{
-											"label": "Learning Services",
-											"url": "https://learning.intersystems.com/course/view.php?name=ExtendingSDA"
+											"label": "Docs",
+											"url": "https://docs.intersystems.com/hs20252/csp/docbook/DocBook.UI.Page.cls?KEY=HXSDA_ch_sda_custom"
 										}
 									]
 								},
 								{
-									"title": "Extending SDA in HealthShare Applications",
+									"title": "Using Extended SDA in HealthShare Applications",
 									"links": [
 										{
-											"label": "Documentation",
-											"url": "https://docs.intersystems.com/healthsharelatest/csp/docbook/DocBook.UI.Page.cls?KEY=HSAPP_extend_sda"
+											"label": "Course",
+											"url": "https://learning.intersystems.com/course/view.php?name=ESDA%20in%20HS%20Apps"
 										}
 									]
 								}
 							]
 						},
 						{
-							"title": "Transformations & Routing",
+							"title": "Clinical Viewer",
+							"description": "Extending HealthShare's internal data model.",
 							"children": [
 								{
-									"title": "Building a Data Transformation (DTL)",
+									"title": "Introduction to the Clinical Viewer",
 									"links": [
 										{
-											"label": "Learning Services",
-											"url": "https://learning.intersystems.com/course/view.php?name=BuildDTL"
+											"label": "Course",
+											"url": "https://learning.intersystems.com/course/view.php?name=IntroductiontoClinicalViewer"
 										}
 									]
 								},
 								{
-									"title": "Advanced Data Transformations",
+									"title": "Exploring the Clinical Viewer",
 									"links": [
 										{
-											"label": "Learning Services",
-											"url": "https://learning.intersystems.com/course/view.php?name=AdvancedDTL"
+											"label": "Course",
+											"url": "https://learning.intersystems.com/course/view.php?name=ExploringCV"
 										}
 									]
 								},
 								{
-									"title": "Building a Message Router",
+									"title": "Adding New Data to the Clinical Viewer",
 									"links": [
 										{
-											"label": "Learning Services",
-											"url": "https://learning.intersystems.com/course/view.php?name=MessageRouter"
-										}
-									]
-								}
-							]
-						}
-					]
-				},
-				{
-					"title": "Security, Operations, and Deployment",
-					"description": "Operate HealthShare safely and at scale.",
-					"items": [
-						{
-							"title": "Security & Access",
-							"children": [
-								{
-									"title": "Connecting an EMR and HealthShare with Single Sign-On",
-									"links": [
-										{
-											"label": "Learning Services",
-											"url": "https://learning.intersystems.com/course/view.php?name=HealthShareSSO"
-										}
-									]
-								},
-								{
-									"title": "Integrating OAuth 2.0 and OpenID Connect",
-									"links": [
-										{
-											"label": "Learning Services",
-											"url": "https://learning.intersystems.com/course/view.php?name=OAuthOIDC"
-										}
-									]
-								}
-							]
-						},
-						{
-							"title": "Monitoring & Reliability",
-							"children": [
-								{
-									"title": "System Alerting and Monitoring (SAM)",
-									"links": [
-										{
-											"label": "Learning Services",
-											"url": "https://learning.intersystems.com/course/view.php?name=SAMOverview"
-										}
-									]
-								},
-								{
-									"title": "High Availability and Disaster Recovery",
-									"links": [
-										{
-											"label": "Learning Services",
-											"url": "https://learning.intersystems.com/course/view.php?name=HADR"
+											"label": "Course",
+											"url": "https://learning.intersystems.com/course/view.php?id=2742"
 										}
 									]
 								}
@@ -748,6 +790,15 @@
 										{
 											"label": "Docs",
 											"url": "https://docs.intersystems.com/payer/csp/docbook/DocBook.UI.Page.cls"
+										}
+									]
+								},
+								{
+									"title": "Deploying HealthShare Solution Modules with InterSystems Package Manager",
+									"links": [
+										{
+											"label": "Video",
+											"url": "https://learning.intersystems.com/course/view.php?id=2762"
 										}
 									]
 								},
