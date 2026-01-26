@@ -245,7 +245,7 @@
     flex-wrap: wrap;
     gap: 8px;
   }
-  .linkbtn{
+  /* .linkbtn{
     display: inline-flex;
     align-items: center;
     gap: 8px;
@@ -256,7 +256,7 @@
     color: var(--text);
   }
   .linkbtn:hover{ text-decoration: none; background: rgba(255,255,255,.10); }
-  .linkbtn img{ width: 14px; height: 14px; opacity: .92; }
+  .linkbtn img{ width: 14px; height: 14px; opacity: .92; } */
   
   .site-footer{
     padding: 18px 16px 28px;
@@ -277,3 +277,363 @@
     .card{ grid-column: span 4; }
   }
   
+  /* Side navigation */
+.side-nav{
+  position: sticky;
+  top: 84px; /* sits under header */
+  width: 220px;
+  max-height: calc(100vh - 96px);
+  overflow: auto;
+  padding: 12px;
+  border-radius: 12px;
+  border: 1px solid rgba(255,255,255,.04);
+  background: linear-gradient(180deg, rgba(255,255,255,.02), rgba(0,0,0,.04));
+  margin-right: 18px;
+  box-shadow: 0 8px 20px rgba(0,0,0,.28);
+  flex: 0 0 220px;
+}
+
+/* Layout: main content with sidebar */
+.container {
+  display: flex;
+  gap: 18px;
+  align-items: flex-start;
+  max-width: 1200px;
+}
+
+/* Resource root takes remaining space */
+.resource-root {
+  flex: 1 1 auto;
+}
+
+/* Side nav list */
+#sideNavList{
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+#sideNavList a{
+  display: block;
+  padding: 8px 10px;
+  border-radius: 10px;
+  color: var(--text);
+  text-decoration: none;
+  font-size: 14px;
+  border: 1px solid transparent;
+}
+#sideNavList a:hover{
+  background: rgba(255,255,255,.03);
+  border-color: var(--border2);
+}
+#sideNavList a.active{
+  background: rgba(188,211,255,.08);
+  color: var(--text);
+  border-color: var(--border2);
+  font-weight: 700;
+}
+
+/* Small screen: stack and hide side nav (user can still use in-page search) */
+@media (max-width: 920px){
+  .container{ display: block; }
+  .side-nav{ display: none; } /* hide on small screens */
+  .resource-root{ margin-top: 12px; }
+}
+
+/* Side nav toggle button (visible on small screens) */
+.side-nav-toggle{
+  display: none; /* shown only on small screens */
+  background: rgba(255,255,255,.04);
+  color: var(--text);
+  border: 1px solid var(--border2);
+  padding: 8px 10px;
+  border-radius: 10px;
+  cursor: pointer;
+  font-weight: 600;
+  gap: 8px;
+}
+.side-nav-toggle:focus{
+  outline: 3px solid rgba(188,211,255,.12);
+  outline-offset: 3px;
+}
+
+/* Make side nav hidden by default on small screens and toggled via .open */
+@media (max-width: 920px){
+  .side-nav{ display: none; position: fixed; left: 12px; top: 82px; z-index: 1200; width: calc(100% - 24px); max-width: 360px; box-shadow: 0 18px 40px rgba(0,0,0,.5); }
+  .side-nav.open{ display: block; }
+
+  /* show toggle button on small screens */
+  .side-nav-toggle{ display: inline-flex; align-items: center; gap: 8px; }
+
+  /* dim content behind when nav open (optional visual) */
+  body.side-nav-active::before{
+    content: "";
+    position: fixed;
+    inset: 0;
+    background: rgba(2,6,12,.45);
+    z-index: 1100;
+  }
+
+  /* ensure main container stacks */
+  .container{ display: block; }
+}
+
+/* On larger screens ensure the toggle is hidden */
+@media (min-width: 921px){
+  .side-nav-toggle{ display: none; }
+}
+
+/* ============================
+   FORCE RESOURCE PAGES TO STACK
+   ============================ */
+
+/* Main resource container must always be single column */
+.resource-root {
+  display: block; /* override grid */
+}
+
+/* Top-level sections (details.section) */
+.resource-root > .section {
+  width: 100%;
+  max-width: 100%;
+}
+
+/* Section bodies should never become multi-column */
+.section-body {
+  display: block;
+}
+
+/* Item lists always stack vertically */
+.items {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+/* Individual items should span full width */
+.item {
+  width: 100%;
+  max-width: 100%;
+}
+
+/* Nested sections (from GUTS children) also stack */
+.section .section {
+  width: 100%;
+  max-width: 100%;
+}
+
+
+/* ================================
+   STACK SEARCH BAR ABOVE RESOURCES
+   ================================ */
+
+/* Ensure main content (excluding side nav) stacks vertically */
+.container {
+  align-items: stretch;
+}
+
+/* Wrap header + resources as a vertical column */
+.path-header {
+  width: 100%;
+  margin-bottom: 12px;
+  border-bottom: 1px solid var(--border);
+  padding-bottom: 12px;
+}
+
+/* Toolbar (search + buttons) always sits above resource list */
+.path-header .toolbar {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  margin-bottom: 12px;
+}
+
+/* Resource root always starts on a new row below the header */
+.resource-root {
+  width: 100%;
+  margin-top: 0;
+}
+
+
+/* Make whole-item anchors look like the item card and fill width */
+.item a.item-link {
+  display: block;
+  text-decoration: none;
+  color: inherit;
+}
+
+/* When anchor wraps the item, ensure hover still works */
+.item a.item-link:hover { text-decoration: none; }
+
+/* Make smaller secondary link buttons sit to the right (if present) */
+.item .item-links { margin-top: 8px; display:flex; gap:8px; flex-wrap:wrap; }
+
+/* If the item is an anchor, remove inner pointer events for the link buttons so they remain clickable */
+/* .item a.item-link .linkbtn { pointer-events: auto; } */
+
+/* Keep accessibility focus style */
+.item a.item-link:focus {
+  outline: 3px solid rgba(188,211,255,.12);
+  outline-offset: 3px;
+}
+
+/* ==============================
+   ENTIRE .item AS LINK + HOVER (cleaned)
+   - Entire .item becomes the link when linkable
+   - Hover/focus highlights the whole card (including badge)
+   - No persistent mouse-focus rectangle; keyboard users keep visible focus
+   - Secondary "linkbtn" rendered as borderless buttons
+   ============================== */
+
+/* Base item and inner box */
+.item {
+  position: relative;
+  padding-left: 12px;
+  transition: transform .12s ease, background .12s ease;
+  -webkit-tap-highlight-color: transparent;
+}
+
+/* When .item is linkable, mark it and reset decoration */
+.item.linkable {
+  display: block;
+  color: inherit;
+  text-decoration: none;
+  border: none;
+}
+
+/* inner content box; reserve right space for badge */
+.item .item-inner {
+  position: relative;
+  padding: 12px 84px 12px 12px;
+  border-radius: 14px;
+  background: rgba(0,0,0,0);
+  transition: background .12s ease, transform .12s ease, box-shadow .12s ease;
+  overflow: visible;
+}
+
+/* Badge placed inside item-inner, right-justified */
+.badge-left {
+  position: absolute;
+  right: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+  min-width: 56px;
+  padding: 6px 8px;
+  border-radius: 10px;
+  font-size: 12px;
+  font-weight: 700;
+  text-align: center;
+  line-height: 1;
+  border: 1px solid var(--border2);
+  color: var(--text);
+  box-shadow: 0 6px 18px rgba(0,0,0,.18);
+  z-index: 4;
+}
+
+/* canonical badge colors (tweak as desired) */
+.badge--video   { background: linear-gradient(180deg,#94B9FF,#6FA8FF); color: #07203a; }
+.badge--course  { background: linear-gradient(180deg,#C9A3FF,#A678FF); color: #23143a; }
+.badge--docs    { background: linear-gradient(180deg,#BFEFD7,#8CE6C0); color: #052818; }
+.badge--exercise{ background: linear-gradient(180deg,#FFD6A6,#FFB46B); color: #2b1400; }
+
+/* Hover and focus-within: apply to whole card (including badge) */
+.item.linkable:hover .item-inner,
+.item.linkable:focus-within .item-inner {
+  background: rgba(255,255,255,0.045);
+  transform: translateY(-3px);
+  box-shadow: 0 14px 36px rgba(0,0,0,.32);
+}
+
+/* Badge visual response on hover/focus-within */
+.item.linkable:hover .badge-left,
+.item.linkable:focus-within .badge-left,
+.item.linkable:focus-visible .badge-left {
+  filter: brightness(1.02);
+  transform: translateY(-50%) scale(1.02);
+}
+
+/* Keyboard focus-visible: whole-card highlight (accessible) */
+.item.linkable:focus-visible .item-inner {
+  box-shadow: 0 0 0 3px rgba(188,211,255,.12), 0 10px 30px rgba(0,0,0,.32);
+  transform: translateY(-2px);
+  background: rgba(255,255,255,0.035);
+}
+
+/* Suppress persistent rectangle for mouse-triggered focus/active states,
+   while keeping :focus-visible for keyboard users */
+.item.linkable:focus,
+.item.linkable:active,
+.item.linkable:focus:not(:focus-visible) {
+  outline: none;
+}
+.item.linkable:focus:not(:focus-visible) .item-inner,
+.item.linkable:active .item-inner {
+  box-shadow: none !important;
+  transform: none !important;
+}
+
+/* Secondary link "buttons" inside an item — borderless, button semantics */
+.item .linkbtn,
+.item.linkable .linkbtn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 6px 8px;
+  border: none;
+  background: transparent;
+  color: var(--text);
+  font-weight: 600;
+  border-radius: 8px;
+  cursor: pointer;
+  text-decoration: none;
+  -webkit-tap-highlight-color: transparent;
+}
+
+/* icon inside button */
+.item .linkbtn img { width: 14px; height: 14px; }
+
+/* subtle hover for small button (no heavy box) */
+.item .linkbtn:hover {
+  background: rgba(255,255,255,0.02);
+  transform: translateY(-1px);
+}
+
+/* Keep keyboard-visible ring for these buttons, but don't show a small box by default;
+   parent :focus-within will display the card highlight. */
+.item .linkbtn:focus { outline: none; }
+.item .linkbtn:focus-visible { box-shadow: 0 0 0 3px rgba(188,211,255,.12); }
+
+/* Make sure pointer-events are enabled for buttons inside outer anchor */
+.item.linkable .linkbtn { pointer-events: auto; }
+
+/* Remove native inner focus rectangle in Firefox */
+button::-moz-focus-inner,
+.item .linkbtn::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+
+/* Responsive tweak for narrow screens */
+@media (max-width: 640px) {
+  .item .item-inner { padding-right: 72px; }
+  .badge-left { right: 10px; min-width: 50px; padding: 5px 6px; }
+}
+
+/* Spacing for item-links region (secondary links) */
+.item > .item-inner + .item-links,
+.item > .item-links {
+  margin-top: 8px;
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+/* Ensure visited/active anchors do not change color or decoration */
+.item.linkable:visited,
+.item.linkable:active,
+.item.linkable:hover:visited {
+  color: inherit;
+  text-decoration: none;
+}

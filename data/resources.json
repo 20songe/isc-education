@@ -1,357 +1,225 @@
 {
-    "paths": {
-      "iris-interoperability": {
-        "title": "InterSystems IRIS Interoperability",
-        "sections": [
-          {
-            "title": "Development",
-            "description": "Build core developer skills first: ObjectScript, APIs, API management, and language integrations.",
-            "items": [
-              {
-                "title": "ObjectScript",
-                "description": "Foundations + dev environment setup.",
-                "tags": ["Development", "ObjectScript"],
-                "links": [],
-                "children": [
-                  {
-                    "title": "InterSystems ObjectScript tutorial (documentation/exercise)",
-                    "description": "Language fundamentals and hands-on practice.",
-                    "tags": ["ObjectScript", "Exercise"],
-                    "links": [{ "label": "Open (add URL)", "url": "" }]
-                  },
-                  {
-                    "title": "Installing VS Code and configuring InterSystems Server Connections (exercise)",
-                    "description": "Developer environment setup for ObjectScript and server connectivity.",
-                    "tags": ["VS Code", "Setup", "Exercise"],
-                    "links": [{ "label": "Open (add URL)", "url": "" }]
-                  }
-                ]
-              },
-              {
-                "title": "API",
-                "description": "Design and build REST APIs on IRIS.",
-                "tags": ["Development", "API"],
-                "links": [],
-                "children": [
-                  {
-                    "title": "Building a REST API with InterSystems IRIS",
-                    "description": "Hands-on REST API construction (add link).",
-                    "tags": ["REST"],
-                    "links": [{ "label": "Open (add URL)", "url": "" }]
-                  },
-                  {
-                    "title": "API Design for REST",
-                    "description": "REST design principles (add link).",
-                    "tags": ["REST", "Design"],
-                    "links": [{ "label": "Open (add URL)", "url": "" }]
-                  },
-                  {
-                    "title": "REST API Design and Development — Setting Up RESTful Services",
-                    "description": "Setup patterns for RESTful services (add link).",
-                    "tags": ["REST"],
-                    "links": [{ "label": "Open (add URL)", "url": "" }]
-                  }
-                ]
-              },
-              {
-                "title": "API Management",
-                "description": "InterSystems API Manager concepts and best practices.",
-                "tags": ["Development", "API Management"],
-                "links": [],
-                "children": [
-                  {
-                    "title": "API Manager with InterSystems IRIS",
-                    "tags": ["API Manager"],
-                    "links": [{ "label": "Open (add URL)", "url": "" }]
-                  },
-                  {
-                    "title": "Best Practices for InterSystems API Manager",
-                    "tags": ["API Manager"],
-                    "links": [{ "label": "Open (add URL)", "url": "" }]
-                  },
-                  {
-                    "title": "Getting You up to Speed on InterSystems API Manager",
-                    "tags": ["API Manager"],
-                    "links": [{ "label": "Open (add URL)", "url": "" }]
-                  },
-                  {
-                    "title": "Hands-On with InterSystems API Manager for Developers",
-                    "tags": ["API Manager", "Hands-on"],
-                    "links": [{ "label": "Open (add URL)", "url": "" }]
-                  }
-                ]
-              },
-              {
-                "title": "Third-Party Languages",
-                "description": "Connect IRIS to Java/.NET and Python ecosystems.",
-                "tags": ["Development", "Languages"],
-                "links": [],
-                "children": [
-                  {
-                    "title": "Using the Native API for Java",
-                    "tags": ["Java", "Native API"],
-                    "links": [{ "label": "Open (add URL)", "url": "" }]
-                  },
-                  {
-                    "title": "Using the Native API for .NET",
-                    "tags": [".NET", "Native API"],
-                    "links": [{ "label": "Open (add URL)", "url": "" }]
-                  },
-                  {
-                    "title": "Embedded Python: Bring the Python Ecosystem to Your ObjectScript App",
-                    "tags": ["Python", "Embedded Python"],
-                    "links": [{ "label": "Open (add URL)", "url": "" }]
-                  }
-                ]
-              },
-              {
-                "title": "Other (Development)",
-                "description": "SQL, terminal tools, JSON, JDBC and related developer utilities.",
-                "tags": ["Development"],
-                "links": [],
-                "children": [
-                  {
-                    "title": "Using InterSystems SQL (documentation)",
-                    "tags": ["SQL", "Docs"],
-                    "links": [{ "label": "Open (add URL)", "url": "" }]
-                  },
-                  {
-                    "title": "Running fast queries with SQL in IRIS (exercise)",
-                    "tags": ["SQL", "Exercise"],
-                    "links": [{ "label": "Open (add URL)", "url": "" }]
-                  },
-                  {
-                    "title": "Using JDBC with InterSystems IRIS",
-                    "tags": ["JDBC"],
-                    "links": [{ "label": "Open (add URL)", "url": "" }]
-                  },
-                  {
-                    "title": "Using JSON in InterSystems IRIS",
-                    "tags": ["JSON"],
-                    "links": [{ "label": "Open (add URL)", "url": "" }]
-                  }
-                ]
-              }
-            ]
-          },
-      
-          {
-            "title": "Platform",
-            "description": "Understand the IRIS platform: management, HA/DR, cloud, containers, and scaling.",
-            "items": [
-              {
-                "title": "Overview",
-                "tags": ["Platform", "Overview"],
-                "links": [],
-                "children": [
-                  {
-                    "title": "Introduction to the Management Portal (video)",
-                    "description": "Overview of the Management Portal and key areas.",
-                    "tags": ["Platform", "Video"],
-                    "links": [{ "label": "Open (add URL)", "url": "" }]
-                  },
-                  {
-                    "title": "Creating namespaces and databases (video)",
-                    "description": "How to structure data and environments in IRIS.",
-                    "tags": ["Platform", "Video"],
-                    "links": [{ "label": "Open (add URL)", "url": "" }]
-                  },
-                  {
-                    "title": "Backup and Restore",
-                    "tags": ["Backup", "Restore"],
-                    "links": [{ "label": "Open (add URL)", "url": "" }]
-                  },
-                  {
-                    "title": "High Availability and Disaster Recovery",
-                    "tags": ["HA", "DR"],
-                    "links": [{ "label": "Open (add URL)", "url": "" }]
-                  }
-                ]
-              },
-              {
-                "title": "Cloud",
-                "tags": ["Platform", "Cloud"],
-                "links": [],
-                "children": [
-                  { "title": "Basics and Benefits of Cloud Deployment", "tags": ["Cloud"], "links": [{ "label": "Open (add URL)", "url": "" }] },
-                  { "title": "Choosing a Public Cloud", "tags": ["Cloud"], "links": [{ "label": "Open (add URL)", "url": "" }] },
-                  { "title": "Introduction to Kubernetes", "tags": ["Kubernetes"], "links": [{ "label": "Open (add URL)", "url": "" }] },
-                  { "title": "InterSystems Kubernetes Operator", "tags": ["Kubernetes"], "links": [{ "label": "Open (add URL)", "url": "" }] }
-                ]
-              },
-              {
-                "title": "Containers",
-                "tags": ["Platform", "Containers"],
-                "links": [],
-                "children": [
-                  { "title": "Docker Containers and InterSystems IRIS", "tags": ["Docker"], "links": [{ "label": "Open (add URL)", "url": "" }] },
-                  { "title": "Durable Data Storage with Containers", "tags": ["Containers"], "links": [{ "label": "Open (add URL)", "url": "" }] },
-                  { "title": "Continuous Delivery with Containers", "tags": ["DevOps", "Containers"], "links": [{ "label": "Open (add URL)", "url": "" }] }
-                ]
-              },
-              {
-                "title": "Scalability",
-                "tags": ["Platform", "Scalability"],
-                "links": [],
-                "children": [
-                  { "title": "Introduction to Sharding in InterSystems IRIS", "tags": ["Sharding"], "links": [{ "label": "Open (add URL)", "url": "" }] },
-                  { "title": "Scaling Up and Out on InterSystems IRIS", "tags": ["Scaling"], "links": [{ "label": "Open (add URL)", "url": "" }] },
-                  { "title": "Load Balancing for Operational Resiliency", "tags": ["Load Balancing"], "links": [{ "label": "Open (add URL)", "url": "" }] }
-                ]
-              }
-            ]
-          },
-      
-          {
-            "title": "Integration",
-            "description": "Healthcare interoperability and interface development: FHIR, HL7, X12, routing, transformations, and operations.",
-            "items": [
-              {
-                "title": "FHIR",
-                "tags": ["Integration", "FHIR"],
-                "links": [],
-                "children": [
-                  {
-                    "title": "What is FHIR? (video)",
-                    "tags": ["FHIR", "Video"],
-                    "links": [{ "label": "Open (add URL)", "url": "" }]
-                  },
-                  {
-                    "title": "FHIR: A healthcare data standard designed for the future (video)",
-                    "tags": ["FHIR", "Video"],
-                    "links": [{ "label": "Open (add URL)", "url": "" }]
-                  },
-                  {
-                    "title": "Getting started with FHIR (course)",
-                    "tags": ["FHIR", "Course"],
-                    "links": [{ "label": "Open (add URL)", "url": "" }]
-                  },
-                  {
-                    "title": "Working with the FHIR resource repository (exercise)",
-                    "tags": ["FHIR", "Exercise"],
-                    "links": [{ "label": "Open (add URL)", "url": "" }]
-                  },
-      
-                  {
-                    "title": "FHIR SQL Builder (module)",
-                    "description": "Builder videos + supporting documentation.",
-                    "tags": ["FHIR", "SQL Builder"],
-                    "links": [],
-                    "children": [
-                      {
-                        "title": "What is the FHIR SQL Builder (video)",
-                        "tags": ["FHIR", "SQL Builder", "Video"],
-                        "links": [{ "label": "Open (add URL)", "url": "" }]
-                      },
-                      {
-                        "title": "Making a projection in the FHIR SQL Builder (video)",
-                        "tags": ["FHIR", "SQL Builder", "Video"],
-                        "links": [{ "label": "Open (add URL)", "url": "" }]
-                      },
-                      {
-                        "title": "Performing an analysis in the FHIR SQL Builder (video)",
-                        "tags": ["FHIR", "SQL Builder", "Video"],
-                        "links": [{ "label": "Open (add URL)", "url": "" }]
-                      }
-                    ]
-                  }
-                ]
-              },
-      
-              {
-                "title": "HL7",
-                "tags": ["Integration", "HL7"],
-                "links": [],
-                "children": [
-                  {
-                    "title": "Introduction to HL7 v2 integrations in IRIS for Health (video)",
-                    "tags": ["HL7", "Video"],
-                    "links": [{ "label": "Open (add URL)", "url": "" }]
-                  },
-                  {
-                    "title": "Getting started with HL7 v2 routing rules (video)",
-                    "tags": ["HL7", "Rules", "Video"],
-                    "links": [{ "label": "Open (add URL)", "url": "" }]
-                  },
-                  {
-                    "title": "Building a message router (exercise)",
-                    "tags": ["HL7", "Exercise"],
-                    "links": [{ "label": "Open (add URL)", "url": "" }]
-                  }
-                ]
-              },
-      
-              {
-                "title": "Healthcare Standards",
-                "tags": ["Integration", "Standards"],
-                "links": [],
-                "children": [
-                  { "title": "Building Productions with X12", "tags": ["X12"], "links": [{ "label": "Open (add URL)", "url": "" }] },
-                  { "title": "Using the DTL Editor in InterSystems IRIS to Transform X12 Messages", "tags": ["X12", "DTL"], "links": [{ "label": "Open (add URL)", "url": "" }] },
-                  { "title": "A Real-World Look at CDA", "tags": ["CDA"], "links": [{ "label": "Open (add URL)", "url": "" }] }
-                ]
-              },
-      
-              {
-                "title": "Interface Development",
-                "tags": ["Integration", "Interface Development"],
-                "links": [],
-                "children": [
-                  {
-                    "title": "Integration architecture (course)",
-                    "tags": ["Architecture", "Course"],
-                    "links": [{ "label": "Open (add URL)", "url": "" }]
-                  },
-                  {
-                    "title": "Data transformation basics (course)",
-                    "tags": ["DTL", "Course"],
-                    "links": [{ "label": "Open (add URL)", "url": "" }]
-                  },
-                  {
-                    "title": "Building a data transformation (exercise)",
-                    "tags": ["DTL", "Exercise"],
-                    "links": [{ "label": "Open (add URL)", "url": "" }]
-                  },
-                  {
-                    "title": "Using the Expression Editor in business rules (video)",
-                    "tags": ["Rules", "Video"],
-                    "links": [{ "label": "Open (add URL)", "url": "" }]
-                  },
-      
-                  {
-                    "title": "Intermediate data model transformation",
-                    "description": "SDA concepts and transforming healthcare data.",
-                    "tags": ["SDA"],
-                    "links": [],
-                    "children": [
-                      {
-                        "title": "What is SDA? (video)",
-                        "tags": ["SDA", "Video"],
-                        "links": [{ "label": "Open (add URL)", "url": "" }]
-                      },
-                      {
-                        "title": "Using SDA to transform healthcare data (video)",
-                        "tags": ["SDA", "Video"],
-                        "links": [{ "label": "Open (add URL)", "url": "" }]
-                      }
-                    ]
-                  }
-                ]
-              },
-      
-              {
-                "title": "Other (Integration)",
-                "tags": ["Integration"],
-                "links": [],
-                "children": [
-                  { "title": "Integrating OAuth 2.0 and OpenID Connect", "tags": ["OAuth", "OIDC"], "links": [{ "label": "Open (add URL)", "url": "" }] },
-                  { "title": "Kafka! Integrating World’s Favorite Stream Processor with InterSystems IRIS", "tags": ["Kafka"], "links": [{ "label": "Open (add URL)", "url": "" }] }
-                ]
-              }
-            ]
-          }
-        ]
-      }      
+  "paths": {
+    "iris-interoperability": {
+      "title": "InterSystems IRIS Interoperability",
+      "sections": [
+        {
+          "title": "Development",
+          "description": "Build core developer skills first: ObjectScript, APIs, API management, and language integrations.",
+          "items": [
+            {
+              "title": "ObjectScript",
+              "children": [
+                {
+                  "title": "InterSystems ObjectScript tutorial",
+                  "links": [
+                    {
+                      "label": "Docs / Exercise",
+                      "url": "https://docs.intersystems.com/irislatest/csp/docbook/DocBook.UI.Page.cls?KEY=TOS_intro"
+                    }
+                  ]
+                },
+                {
+                  "title": "Installing VS Code and configuring InterSystems Server Connections",
+                  "links": [
+                    {
+                      "label": "Exercise",
+                      "url": "https://learning.intersystems.com/course/view.php?name=VSCodeConfiguring"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+
+        {
+          "title": "Platform",
+          "items": [
+            {
+              "title": "Overview",
+              "children": [
+                {
+                  "title": "Introduction to the Management Portal",
+                  "links": [
+                    {
+                      "label": "Video",
+                      "url": "https://learning.intersystems.com/course/view.php?id=1322"
+                    }
+                  ]
+                },
+                {
+                  "title": "Creating namespaces and databases",
+                  "links": [
+                    {
+                      "label": "Video",
+                      "url": "https://learning.intersystems.com/course/view.php?id=2124"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+
+        {
+          "title": "Integration",
+          "items": [
+            {
+              "title": "HL7",
+              "children": [
+                {
+                  "title": "Introduction to HL7 v2 integrations in IRIS for Healt (video)",
+                  "links": [
+                    {
+                      "label": "Video",
+                      "url": "https://www.youtube.com/watch?v=4NWcLbhJ8Xo"
+                    }
+                  ]
+                },
+                {
+                  "title": "Getting started with HL7 v2 routing rules",
+                  "links": [
+                    {
+                      "label": "Video",
+                      "url": "https://learning.intersystems.com/course/view.php?id=1129"
+                    }
+                  ]
+                },
+                {
+                  "title": "Using the Expression Editor in business rules",
+                  "links": [
+                    {
+                      "label": "Video",
+                      "url": "https://learning.intersystems.com/course/view.php?id=941"
+                    }
+                  ]
+                },
+                {
+                  "title": "Building a message router (exercise)",
+                  "links": [
+                    {
+                      "label": "Exercise",
+                      "url": "https://learning.intersystems.com/course/view.php?id=2517"
+                    }
+                  ]
+                }
+              ]
+            },
+
+            {
+              "title": "FHIR",
+              "children": [
+                {
+                  "title": "What is FHIR?",
+                  "links": [
+                    {
+                      "label": "Video",
+                      "url": "https://learning.intersystems.com/course/view.php?id=1077"
+                    }
+                  ]
+                },
+                {
+                  "title": "FHIR: A healthcare data standard designed for the future",
+                  "links": [
+                    {
+                      "label": "Video",
+                      "url": "https://www.youtube.com/watch?v=OIt0GrCPu8k"
+                    }
+                  ]
+                },
+                {
+                  "title": "Getting started with FHIR",
+                  "links": [
+                    {
+                      "label": "Course",
+                      "url": "https://learning.intersystems.com/course/view.php?name=GS%20with%20FHIR%20IRIS"
+                    }
+                  ]
+                },
+                {
+                  "title": "Working with the FHIR resource repository",
+                  "links": [
+                    {
+                      "label": "Exercise",
+                      "url": "https://learning.intersystems.com/course/view.php?id=1276"
+                    }
+                  ]
+                }
+              ]
+            },
+
+            {
+              "title": "FHIR SQL Builder",
+              "children": [
+                {
+                  "title": "What is the FHIR SQL Builder",
+                  "links": [
+                    {
+                      "label": "Video",
+                      "url": "https://learning.intersystems.com/course/view.php?name=FHIRSQLBuilderOverview"
+                    }
+                  ]
+                },
+                {
+                  "title": "Making a projection in the FHIR SQL Builder",
+                  "links": [
+                    {
+                      "label": "Video",
+                      "url": "https://learning.intersystems.com/course/view.php?id=2153"
+                    }
+                  ]
+                },
+                {
+                  "title": "Performing an analysis in the FHIR SQL Builder",
+                  "links": [
+                    {
+                      "label": "Video",
+                      "url": "https://learning.intersystems.com/course/view.php?id=2155"
+                    }
+                  ]
+                },
+                {
+                  "title": "Accessing FHIR SQL Builder",
+                  "links": [
+                    {
+                      "label": "Documentation",
+                      "url": "https://docs.intersystems.com/irisforhealthlatest/csp/docbook/DocBook.UI.Page.cls?KEY=HXFHIRFSB_installation"
+                    }
+                  ]
+                },
+                {
+                  "title": "Analyze the FHIR repository for SQL Builder",
+                  "links": [
+                    {
+                      "label": "Documentation",
+                      "url": "https://docs.intersystems.com/irisforhealthlatest/csp/docbook/DocBook.UI.Page.cls?KEY=HXFHIRFSB_analyze-repo"
+                    }
+                  ]
+                },
+                {
+                  "title": "Creating a new transformation specification for FHIR SQL Builder",
+                  "links": [
+                    {
+                      "label": "Documentation",
+                      "url": "https://docs.intersystems.com/irisforhealthlatest/csp/docbook/DocBook.UI.Page.cls?KEY=HXFHIRFSB_create-trans-spec"
+                    }
+                  ]
+                },
+                {
+                  "title": "Create the projection for FHIR SQL Builder",
+                  "links": [
+                    {
+                      "label": "Documentation",
+                      "url": "https://docs.intersystems.com/irisforhealthlatest/csp/docbook/DocBook.UI.Page.cls?KEY=HXFHIRFSB_create-projection"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
   }
 }
-  

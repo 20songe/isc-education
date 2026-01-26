@@ -22,6 +22,10 @@
       <a href="healthshare.html">HealthShare</a>
       <a href="payer-services.html">Payer Services</a>
     </nav>
+
+    <!-- <button id="sideNavToggle" class="side-nav-toggle" aria-controls="sideNav" aria-expanded="false" aria-label="Toggle section navigation">
+      ☰ Sections
+    </button> Add inside <header class="site-header">-->
   </header>
 
   <main class="container">
@@ -41,14 +45,16 @@
       </div>
     </section>
 
-    <section id="resourceRoot" class="resource-root" aria-live="polite"></section>
+    <!-- add this inside <main class="container">, put it before the resourceRoot section -->
+    <!-- <aside id="sideNav" class="side-nav" aria-label="Section navigation">
+      <nav>
+        <ul id="sideNavList">
+        </ul>
+      </nav>
+    </aside> -->
 
-    <section class="note">
-      <h3>Source</h3>
-      <p class="muted">
-        IRIS Interoperability items were seeded from the provided educational resources document. :contentReference[oaicite:1]{index=1}
-      </p>
-    </section>
+
+    <section id="resourceRoot" class="resource-root" aria-live="polite"></section>
   </main>
 
   <footer class="site-footer">
